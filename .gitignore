@@ -1,0 +1,73 @@
+
+# Ignore datasets, trained models, and macOS metadata
+ml/data/
+ml/models/
+.DS_Store
+**/.DS_Store
+*.safetensors
+*.joblib
+*.pt
+*.pth
+*.onnx
+*.npy
+*.nii
+*.nii.gz
+install_tesseract.exe
+
+# Python virtual environments
+.venv/
+.venv-*/
+venv/
+env/
+backend/.venv/
+**/site-packages/
+
+# Frontend dependencies and build output
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Patient uploads and local databases
+uploads/
+*.db
+*.sqlite
+*.sqlite3
+
+# Local caches
+.cache/
+.mpl-cache/
+**/.mpl-cache/
+
+# Patient data and generated reports
+uploads/
+backend/uploads/
+**/uploads/
+*.pdf
+*.jpeg
+*.jpg
+*.webp
+
+# macOS metadata
+.DS_Store
+**/.DS_Store
+
+# Python cache files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Secrets and environment configuration
+.env
+.env.*
+!.env.example
+!backend/env.example
+
+# Runtime logs
+*.log
+*.out
+*.err
+
+# Local caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
