@@ -1,0 +1,122 @@
+{
+  "model_name": "XGBoost 30-Day Readmission Classifier (Fixed)",
+  "dataset": "UCI Diabetes 130-US Hospitals",
+  "total_samples": 101766,
+  "train_size": 73269,
+  "val_size": 8141,
+  "test_size": 20353,
+  "num_features": 168,
+  "best_iteration": 233,
+  "fixes_applied": [
+    "reg_lambda=2 (L2 regularisation)",
+    "min_child_weight=4",
+    "early_stopping_rounds=20 on held-out validation set",
+    "decision threshold tuned from PR curve on validation set"
+  ],
+  "decision_threshold": {
+    "default_0_5": {
+      "accuracy": 0.6552,
+      "precision": 0.1829,
+      "recall": 0.6028,
+      "f1_score": 0.2807,
+      "roc_auc": 0.6901,
+      "confusion_matrix": [
+        [
+          11967,
+          6115
+        ],
+        [
+          902,
+          1369
+        ]
+      ]
+    },
+    "tuned": {
+      "accuracy": 0.8078,
+      "precision": 0.2423,
+      "recall": 0.3395,
+      "f1_score": 0.2828,
+      "roc_auc": 0.6901,
+      "confusion_matrix": [
+        [
+          15671,
+          2411
+        ],
+        [
+          1500,
+          771
+        ]
+      ]
+    },
+    "optimal_threshold": 0.6003
+  },
+  "evaluation_metrics": {
+    "accuracy": 0.8078,
+    "precision": 0.2423,
+    "recall": 0.3395,
+    "f1_score": 0.2828,
+    "roc_auc": 0.6901,
+    "confusion_matrix": [
+      [
+        15671,
+        2411
+      ],
+      [
+        1500,
+        771
+      ]
+    ]
+  },
+  "confusion_matrix": [
+    [
+      15671,
+      2411
+    ],
+    [
+      1500,
+      771
+    ]
+  ],
+  "top_10_features": [
+    {
+      "feature": "number_inpatient",
+      "importance": 0.07755398005247116
+    },
+    {
+      "feature": "discharge_disposition_id",
+      "importance": 0.030037594959139824
+    },
+    {
+      "feature": "diag_2_cat_Neoplasms",
+      "importance": 0.014257767237722874
+    },
+    {
+      "feature": "diag_1_cat_Respiratory",
+      "importance": 0.01329921092838049
+    },
+    {
+      "feature": "number_emergency",
+      "importance": 0.012914055958390236
+    },
+    {
+      "feature": "diabetesMed",
+      "importance": 0.012819632887840271
+    },
+    {
+      "feature": "medical_specialty_Oncology",
+      "importance": 0.012656213715672493
+    },
+    {
+      "feature": "insulin_No",
+      "importance": 0.01217688713222742
+    },
+    {
+      "feature": "number_diagnoses",
+      "importance": 0.011648831889033318
+    },
+    {
+      "feature": "diag_1_cat_Musculoskeletal",
+      "importance": 0.011392995715141296
+    }
+  ]
+}

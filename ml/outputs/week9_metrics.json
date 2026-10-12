@@ -1,0 +1,130 @@
+{
+  "model_name": "XGBoost 30-Day Readmission Classifier (Week 9 Fixed)",
+  "dataset": "UCI Diabetes 130-US Hospitals",
+  "feature_engineering": [
+    "age-bin midpoint",
+    "ICD-9 diagnostic categories",
+    "one-hot encounter and medication features",
+    "numeric feature scaling"
+  ],
+  "class_imbalance": {
+    "strategy": "scale_pos_weight",
+    "value": 7.9606
+  },
+  "fixes_applied": [
+    "reg_lambda added to all candidates",
+    "Calibration uses cv='prefit' on a held-out 10% calibration set",
+    "Decision threshold tuned from PR curve on calibration set"
+  ],
+  "cross_validation": {
+    "folds": 3,
+    "metric": "roc_auc",
+    "comparison": {
+      "logistic_regression": 0.6269,
+      "baseline_xgboost": 0.6532,
+      "tuned_shallow_xgboost": 0.6578,
+      "tuned_balanced_xgboost": 0.6538
+    },
+    "selected_model": "tuned_shallow_xgboost"
+  },
+  "uncalibrated_test_metrics": {
+    "accuracy": 0.6446,
+    "precision": 0.18,
+    "recall": 0.6147,
+    "f1_score": 0.2785,
+    "roc_auc": 0.6783,
+    "confusion_matrix": [
+      [
+        11724,
+        6358
+      ],
+      [
+        875,
+        1396
+      ]
+    ],
+    "threshold_used": 0.5
+  },
+  "calibrated_default_threshold": {
+    "accuracy": 0.8883,
+    "precision": 0.48,
+    "recall": 0.0106,
+    "f1_score": 0.0207,
+    "roc_auc": 0.6476,
+    "confusion_matrix": [
+      [
+        18056,
+        26
+      ],
+      [
+        2247,
+        24
+      ]
+    ],
+    "threshold_used": 0.5
+  },
+  "calibrated_tuned_threshold": {
+    "accuracy": 0.7804,
+    "precision": 0.2066,
+    "recall": 0.3408,
+    "f1_score": 0.2573,
+    "roc_auc": 0.6476,
+    "confusion_matrix": [
+      [
+        15110,
+        2972
+      ],
+      [
+        1497,
+        774
+      ]
+    ],
+    "threshold_used": 0.1444
+  },
+  "optimal_threshold": 0.1444,
+  "calibrated_test_metrics": {
+    "accuracy": 0.7804,
+    "precision": 0.2066,
+    "recall": 0.3408,
+    "f1_score": 0.2573,
+    "roc_auc": 0.6476,
+    "confusion_matrix": [
+      [
+        15110,
+        2972
+      ],
+      [
+        1497,
+        774
+      ]
+    ],
+    "threshold_used": 0.1444
+  },
+  "calibration_curve": {
+    "mean_predicted_probability": [
+      0.0356,
+      0.061,
+      0.0753,
+      0.0866,
+      0.0959,
+      0.1067,
+      0.1218,
+      0.1348,
+      0.1524,
+      0.2419
+    ],
+    "fraction_of_positives": [
+      0.0549,
+      0.057,
+      0.0762,
+      0.0752,
+      0.0927,
+      0.1,
+      0.1232,
+      0.138,
+      0.1606,
+      0.2397
+    ]
+  },
+  "note": "Calibration uses isotonic regression on a held-out calibration set (cv='prefit'). Decision threshold is tuned on the same calibration set via the PR curve. External validation is still required before clinical use."
+}

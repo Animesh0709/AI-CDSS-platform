@@ -1,73 +1,88 @@
+# Python environments and caches
+.venv/
+.venv-*/
+venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.coverage
+htmlcov/
 
-# Ignore datasets, trained models, and macOS metadata
-ml/data/
-ml/models/
-.DS_Store
-**/.DS_Store
+# Node dependencies and builds
+node_modules/
+dist/
+build/
+.vite/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Local databases and patient uploads
+*.db
+*.sqlite
+*.sqlite3
+uploads/
+
+# Large model weights
 *.safetensors
-*.joblib
 *.pt
 *.pth
 *.onnx
-*.npy
-*.nii
-*.nii.gz
-install_tesseract.exe
+
+# Local files and logs
+.DS_Store
+*.log
+
+# Generated caches
+.mpl-cache/
+**/.mpl-cache/
+.mplconfig/
+.cache/
+
+# Local databases and uploads
+*.db
+*.sqlite
+*.sqlite3
+uploads/
 
 # Python virtual environments
 .venv/
 .venv-*/
 venv/
-env/
-backend/.venv/
-**/site-packages/
 
-# Frontend dependencies and build output
+# Large model weights
+*.safetensors
+*.pt
+*.pth
+*.onnx
+
+# Local environments and generated files
+.venv/
+.venv-*/
+venv/
 node_modules/
-frontend/dist/
-frontend/.vite/
-
-# Patient uploads and local databases
-uploads/
-*.db
-*.sqlite
-*.sqlite3
-
-# Local caches
-.cache/
-.mpl-cache/
-**/.mpl-cache/
-
-# Patient data and generated reports
-uploads/
-backend/uploads/
-**/uploads/
-*.pdf
-*.jpeg
-*.jpg
-*.webp
-
-# macOS metadata
-.DS_Store
-**/.DS_Store
-
-# Python cache files
 __pycache__/
-*.py[cod]
 .pytest_cache/
-
-# Secrets and environment configuration
+.vite/
+dist/
 .env
 .env.*
 !.env.example
-!backend/env.example
-
-# Runtime logs
+!env.example
 *.log
-*.out
-*.err
+.DS_Store
 
-# Local caches
-__pycache__/
-*.py[cod]
-.pytest_cache/
+# Datasets, model weights, and patient uploads
+ml/data/
+ml/models/
+uploads/
+backend/uploads/
+*.safetensors
+*.pt
+*.pth
+*.onnx
+
+# Installer binaries
+install_tesseract.exe
