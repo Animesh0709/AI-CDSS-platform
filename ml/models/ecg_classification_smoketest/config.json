@@ -1,0 +1,31 @@
+{
+  "target_classes": [
+    "NORM",
+    "MI",
+    "STTC",
+    "CD",
+    "HYP"
+  ],
+  "hyperparams": {
+    "n_estimators": 100,
+    "max_depth": 4,
+    "learning_rate": 0.1,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "random_state": 42
+  },
+  "thresholds": {
+    "NORM": 0.1,
+    "MI": 0.1,
+    "STTC": 0.5,
+    "CD": 0.5,
+    "HYP": 0.5
+  },
+  "training_prevalences": {
+    "NORM": 1.0,
+    "MI": 0.0,
+    "STTC": 0.0,
+    "CD": 0.0,
+    "HYP": 0.0
+  }
+}

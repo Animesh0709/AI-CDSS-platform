@@ -1,0 +1,11 @@
+{
+  "scaler_type": "StandardScaler",
+  "fitted_on_split": "folds_1_to_8_only",
+  "num_training_samples": 17418,
+  "mean_shape": [
+    1320
+  ],
+  "scale_shape": [
+    1320
+  ]
+}

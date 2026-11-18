@@ -1,0 +1,36 @@
+{
+  "default": {
+    "WT": 0.5,
+    "TC": 0.5,
+    "ET": 0.5
+  },
+  "calibrated_operating_points": {
+    "unet3d": {
+      "WT": 0.8,
+      "TC": 0.8,
+      "ET": 0.5
+    },
+    "attunet3d": {
+      "WT": 0.9,
+      "TC": 0.85,
+      "ET": 0.8
+    },
+    "nnunet": {
+      "WT": 0.8,
+      "TC": 0.75,
+      "ET": 0.7
+    },
+    "brats": {
+      "WT": 0.5,
+      "TC": 0.5,
+      "ET": 0.5
+    }
+  },
+  "tuning_cohort": "Validation partition (4 patients: UPENN-GBM-00020_11, 00021_11, 00026_11, 00029_11)",
+  "held_out_test_patients": [
+    "UPENN-GBM-00030_11",
+    "UPENN-GBM-00031_11",
+    "UPENN-GBM-00033_11",
+    "UPENN-GBM-00035_11"
+  ]
+}

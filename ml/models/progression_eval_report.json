@@ -1,0 +1,174 @@
+{
+  "status": "available",
+  "dataset": "LUMIERE Longitudinal Glioblastoma MRI (Scientific Data / Figshare 5904905)",
+  "held_out_patients_count": 18,
+  "held_out_transitions_count": 70,
+  "test_class_distribution": {
+    "progressive_disease_count": 44,
+    "stable_or_response_count": 26
+  },
+  "models": {
+    "xgboost": {
+      "name": "Longitudinal XGBoost",
+      "metrics": {
+        "pr_auc": 0.91,
+        "roc_auc": 0.8497,
+        "balanced_accuracy": 0.8007,
+        "accuracy": 0.8286,
+        "sensitivity": 0.9091,
+        "specificity": 0.6923,
+        "brier_score": 0.1514,
+        "confusion_matrix": {
+          "true_negatives": 18,
+          "false_positives": 8,
+          "false_negatives": 4,
+          "true_positives": 40
+        }
+      },
+      "confidence_intervals": {
+        "pr_auc": {
+          "ci_lower": 0.8199,
+          "ci_upper": 0.9566
+        },
+        "roc_auc": {
+          "ci_lower": 0.7263,
+          "ci_upper": 0.9173
+        },
+        "balanced_accuracy": {
+          "ci_lower": 0.6771,
+          "ci_upper": 0.8884
+        },
+        "sensitivity": {
+          "ci_lower": 0.7838,
+          "ci_upper": 0.9674
+        },
+        "specificity": {
+          "ci_lower": 0.4615,
+          "ci_upper": 0.8802
+        }
+      }
+    },
+    "svm": {
+      "name": "Longitudinal SVM (RBF Kernel)",
+      "metrics": {
+        "pr_auc": 0.8162,
+        "roc_auc": 0.7517,
+        "balanced_accuracy": 0.7238,
+        "accuracy": 0.7714,
+        "sensitivity": 0.9091,
+        "specificity": 0.5385,
+        "brier_score": 0.1858,
+        "confusion_matrix": {
+          "true_negatives": 14,
+          "false_positives": 12,
+          "false_negatives": 4,
+          "true_positives": 40
+        }
+      },
+      "confidence_intervals": {
+        "pr_auc": {
+          "ci_lower": 0.6523,
+          "ci_upper": 0.9087
+        },
+        "roc_auc": {
+          "ci_lower": 0.4838,
+          "ci_upper": 0.8718
+        },
+        "balanced_accuracy": {
+          "ci_lower": 0.5305,
+          "ci_upper": 0.8312
+        },
+        "sensitivity": {
+          "ci_lower": 0.8125,
+          "ci_upper": 0.9698
+        },
+        "specificity": {
+          "ci_lower": 0.1538,
+          "ci_upper": 0.7781
+        }
+      }
+    },
+    "deep_learning": {
+      "name": "Longitudinal Deep Neural Net",
+      "metrics": {
+        "pr_auc": 0.819,
+        "roc_auc": 0.7745,
+        "balanced_accuracy": 0.7666,
+        "accuracy": 0.7857,
+        "sensitivity": 0.8409,
+        "specificity": 0.6923,
+        "brier_score": 0.1889,
+        "confusion_matrix": {
+          "true_negatives": 18,
+          "false_positives": 8,
+          "false_negatives": 7,
+          "true_positives": 37
+        }
+      },
+      "confidence_intervals": {
+        "pr_auc": {
+          "ci_lower": 0.5878,
+          "ci_upper": 0.9602
+        },
+        "roc_auc": {
+          "ci_lower": 0.5822,
+          "ci_upper": 0.894
+        },
+        "balanced_accuracy": {
+          "ci_lower": 0.6414,
+          "ci_upper": 0.8618
+        },
+        "sensitivity": {
+          "ci_lower": 0.7141,
+          "ci_upper": 0.919
+        },
+        "specificity": {
+          "ci_lower": 0.4611,
+          "ci_upper": 0.8615
+        }
+      }
+    }
+  },
+  "top_predictive_features": [
+    {
+      "feature": "curr_t2_enhancing_shape_SurfaceArea",
+      "importance": 0.077
+    },
+    {
+      "feature": "curr_ct1_enhancing_shape_VoxelVolume",
+      "importance": 0.0327
+    },
+    {
+      "feature": "curr_ct1_enhancing_shape_MeshVolume",
+      "importance": 0.0266
+    },
+    {
+      "feature": "delta_ct1_enhancing_shape_MeshVolume",
+      "importance": 0.0238
+    },
+    {
+      "feature": "delta_ct1_enhancing_shape_SurfaceArea",
+      "importance": 0.022
+    },
+    {
+      "feature": "delta_flair_edema_shape_MeshVolume",
+      "importance": 0.02
+    },
+    {
+      "feature": "curr_ct1_enhancing_shape_SurfaceArea",
+      "importance": 0.0184
+    },
+    {
+      "feature": "delta_ct1_edema_shape_MeshVolume",
+      "importance": 0.0177
+    },
+    {
+      "feature": "delta_ct1_edema_shape_SurfaceArea",
+      "importance": 0.0175
+    },
+    {
+      "feature": "delta_flair_enhancing_shape_MeshVolume",
+      "importance": 0.0174
+    }
+  ]
+}

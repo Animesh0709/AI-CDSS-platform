@@ -1,0 +1,999 @@
+{
+  "timestamp": "2026-10-30T08:02:32.089512",
+  "n_features": 64,
+  "feature_names": [
+    "heart_rate_mean",
+    "heart_rate_std",
+    "heart_rate_slope",
+    "heart_rate_last",
+    "heart_rate_slope_per_hr",
+    "heart_rate_velocity_last",
+    "heart_rate_missing_frac",
+    "heart_rate_recent_dev",
+    "respiratory_rate_mean",
+    "respiratory_rate_std",
+    "respiratory_rate_slope",
+    "respiratory_rate_last",
+    "respiratory_rate_slope_per_hr",
+    "respiratory_rate_velocity_last",
+    "respiratory_rate_missing_frac",
+    "respiratory_rate_recent_dev",
+    "systolic_bp_mean",
+    "systolic_bp_std",
+    "systolic_bp_slope",
+    "systolic_bp_last",
+    "systolic_bp_slope_per_hr",
+    "systolic_bp_velocity_last",
+    "systolic_bp_missing_frac",
+    "systolic_bp_recent_dev",
+    "diastolic_bp_mean",
+    "diastolic_bp_std",
+    "diastolic_bp_slope",
+    "diastolic_bp_last",
+    "diastolic_bp_slope_per_hr",
+    "diastolic_bp_velocity_last",
+    "diastolic_bp_missing_frac",
+    "diastolic_bp_recent_dev",
+    "spo2_mean",
+    "spo2_std",
+    "spo2_slope",
+    "spo2_last",
+    "spo2_slope_per_hr",
+    "spo2_velocity_last",
+    "spo2_missing_frac",
+    "spo2_recent_dev",
+    "temperature_c_mean",
+    "temperature_c_std",
+    "temperature_c_slope",
+    "temperature_c_last",
+    "temperature_c_slope_per_hr",
+    "temperature_c_velocity_last",
+    "temperature_c_missing_frac",
+    "temperature_c_recent_dev",
+    "news2_score_mean",
+    "news2_score_std",
+    "news2_score_slope",
+    "news2_score_last",
+    "news2_score_slope_per_hr",
+    "news2_score_velocity_last",
+    "news2_score_missing_frac",
+    "news2_score_recent_dev",
+    "n_readings",
+    "window_hours",
+    "obs_density_per_hr",
+    "has_sufficient_history",
+    "overall_missingness",
+    "shock_index",
+    "spo2_rr_ratio",
+    "news2_velocity"
+  ],
+  "n_train": 25618,
+  "n_val": 3893,
+  "n_test": 8052,
+  "baseline_logistic_regression": {
+    "eval_metrics": {
+      "n_samples": 8052,
+      "n_positive": 159,
+      "n_negative": 7893,
+      "prevalence": 0.0197,
+      "threshold": 0.9096999764442444,
+      "baselines": {
+        "all_negative_brier_score": 0.0197,
+        "prevalence_brier_score": 0.0194,
+        "random_auprc": 0.0197
+      },
+      "auroc": 0.6444,
+      "auprc": 0.0377,
+      "brier_score": 0.2054,
+      "operating_metrics": {
+        "threshold": 0.9097,
+        "sensitivity": 0.0,
+        "specificity": 0.9965,
+        "precision": 0.0,
+        "npv": 0.9802,
+        "f1_score": 0.0,
+        "confusion_matrix": {
+          "tp": 0,
+          "fp": 28,
+          "tn": 7865,
+          "fn": 159
+        }
+      },
+      "sensitivity": 0.0,
+      "specificity": 0.9965,
+      "positive_predictive_value": 0.0,
+      "negative_predictive_value": 0.9802,
+      "confusion_matrix": {
+        "true_positive": 0,
+        "false_positive": 28,
+        "true_negative": 7865,
+        "false_negative": 159
+      },
+      "threshold_evaluations": [
+        {
+          "threshold": 0.01,
+          "sensitivity": 0.9937,
+          "specificity": 0.0,
+          "precision": 0.0196,
+          "npv": 0.0,
+          "f1_score": 0.0385,
+          "confusion_matrix": {
+            "tp": 158,
+            "fp": 7893,
+            "tn": 0,
+            "fn": 1
+          }
+        },
+        {
+          "threshold": 0.02,
+          "sensitivity": 0.9937,
+          "specificity": 0.0005,
+          "precision": 0.0196,
+          "npv": 0.8,
+          "f1_score": 0.0385,
+          "confusion_matrix": {
+            "tp": 158,
+            "fp": 7889,
+            "tn": 4,
+            "fn": 1
+          }
+        },
+        {
+          "threshold": 0.03,
+          "sensitivity": 0.9937,
+          "specificity": 0.001,
+          "precision": 0.0196,
+          "npv": 0.8889,
+          "f1_score": 0.0385,
+          "confusion_matrix": {
+            "tp": 158,
+            "fp": 7885,
+            "tn": 8,
+            "fn": 1
+          }
+        },
+        {
+          "threshold": 0.05,
+          "sensitivity": 0.9937,
+          "specificity": 0.003,
+          "precision": 0.0197,
+          "npv": 0.96,
+          "f1_score": 0.0386,
+          "confusion_matrix": {
+            "tp": 158,
+            "fp": 7869,
+            "tn": 24,
+            "fn": 1
+          }
+        },
+        {
+          "threshold": 0.1,
+          "sensitivity": 0.9623,
+          "specificity": 0.0174,
+          "precision": 0.0193,
+          "npv": 0.958,
+          "f1_score": 0.0379,
+          "confusion_matrix": {
+            "tp": 153,
+            "fp": 7756,
+            "tn": 137,
+            "fn": 6
+          }
+        },
+        {
+          "threshold": 0.2,
+          "sensitivity": 0.8931,
+          "specificity": 0.1343,
+          "precision": 0.0204,
+          "npv": 0.9842,
+          "f1_score": 0.0398,
+          "confusion_matrix": {
+            "tp": 142,
+            "fp": 6833,
+            "tn": 1060,
+            "fn": 17
+          }
+        },
+        {
+          "threshold": 0.3,
+          "sensitivity": 0.8428,
+          "specificity": 0.3251,
+          "precision": 0.0245,
+          "npv": 0.9904,
+          "f1_score": 0.0477,
+          "confusion_matrix": {
+            "tp": 134,
+            "fp": 5327,
+            "tn": 2566,
+            "fn": 25
+          }
+        },
+        {
+          "threshold": 0.5,
+          "sensitivity": 0.5283,
+          "specificity": 0.6819,
+          "precision": 0.0324,
+          "npv": 0.9863,
+          "f1_score": 0.061,
+          "confusion_matrix": {
+            "tp": 84,
+            "fp": 2511,
+            "tn": 5382,
+            "fn": 75
+          }
+        }
+      ]
+    },
+    "eval_metrics_default_threshold_0_5": {
+      "n_samples": 8052,
+      "n_positive": 159,
+      "n_negative": 7893,
+      "prevalence": 0.0197,
+      "threshold": 0.5,
+      "baselines": {
+        "all_negative_brier_score": 0.0197,
+        "prevalence_brier_score": 0.0194,
+        "random_auprc": 0.0197
+      },
+      "auroc": 0.6444,
+      "auprc": 0.0377,
+      "brier_score": 0.2054,
+      "operating_metrics": {
+        "threshold": 0.5,
+        "sensitivity": 0.5283,
+        "specificity": 0.6819,
+        "precision": 0.0324,
+        "npv": 0.9863,
+        "f1_score": 0.061,
+        "confusion_matrix": {
+          "tp": 84,
+          "fp": 2511,
+          "tn": 5382,
+          "fn": 75
+        }
+      },
+      "sensitivity": 0.5283,
+      "specificity": 0.6819,
+      "positive_predictive_value": 0.0324,
+      "negative_predictive_value": 0.9863,
+      "confusion_matrix": {
+        "true_positive": 84,
+        "false_positive": 2511,
+        "true_negative": 5382,
+        "false_negative": 75
+      },
+      "threshold_evaluations": [
+        {
+          "threshold": 0.01,
+          "sensitivity": 0.9937,
+          "specificity": 0.0,
+          "precision": 0.0196,
+          "npv": 0.0,
+          "f1_score": 0.0385,
+          "confusion_matrix": {
+            "tp": 158,
+            "fp": 7893,
+            "tn": 0,
+            "fn": 1
+          }
+        },
+        {
+          "threshold": 0.02,
+          "sensitivity": 0.9937,
+          "specificity": 0.0005,
+          "precision": 0.0196,
+          "npv": 0.8,
+          "f1_score": 0.0385,
+          "confusion_matrix": {
+            "tp": 158,
+            "fp": 7889,
+            "tn": 4,
+            "fn": 1
+          }
+        },
+        {
+          "threshold": 0.03,
+          "sensitivity": 0.9937,
+          "specificity": 0.001,
+          "precision": 0.0196,
+          "npv": 0.8889,
+          "f1_score": 0.0385,
+          "confusion_matrix": {
+            "tp": 158,
+            "fp": 7885,
+            "tn": 8,
+            "fn": 1
+          }
+        },
+        {
+          "threshold": 0.05,
+          "sensitivity": 0.9937,
+          "specificity": 0.003,
+          "precision": 0.0197,
+          "npv": 0.96,
+          "f1_score": 0.0386,
+          "confusion_matrix": {
+            "tp": 158,
+            "fp": 7869,
+            "tn": 24,
+            "fn": 1
+          }
+        },
+        {
+          "threshold": 0.1,
+          "sensitivity": 0.9623,
+          "specificity": 0.0174,
+          "precision": 0.0193,
+          "npv": 0.958,
+          "f1_score": 0.0379,
+          "confusion_matrix": {
+            "tp": 153,
+            "fp": 7756,
+            "tn": 137,
+            "fn": 6
+          }
+        },
+        {
+          "threshold": 0.2,
+          "sensitivity": 0.8931,
+          "specificity": 0.1343,
+          "precision": 0.0204,
+          "npv": 0.9842,
+          "f1_score": 0.0398,
+          "confusion_matrix": {
+            "tp": 142,
+            "fp": 6833,
+            "tn": 1060,
+            "fn": 17
+          }
+        },
+        {
+          "threshold": 0.3,
+          "sensitivity": 0.8428,
+          "specificity": 0.3251,
+          "precision": 0.0245,
+          "npv": 0.9904,
+          "f1_score": 0.0477,
+          "confusion_matrix": {
+            "tp": 134,
+            "fp": 5327,
+            "tn": 2566,
+            "fn": 25
+          }
+        },
+        {
+          "threshold": 0.5,
+          "sensitivity": 0.5283,
+          "specificity": 0.6819,
+          "precision": 0.0324,
+          "npv": 0.9863,
+          "f1_score": 0.061,
+          "confusion_matrix": {
+            "tp": 84,
+            "fp": 2511,
+            "tn": 5382,
+            "fn": 75
+          }
+        }
+      ]
+    },
+    "eval_metrics_val_selected_threshold": {
+      "n_samples": 8052,
+      "n_positive": 159,
+      "n_negative": 7893,
+      "prevalence": 0.0197,
+      "threshold": 0.9096999764442444,
+      "baselines": {
+        "all_negative_brier_score": 0.0197,
+        "prevalence_brier_score": 0.0194,
+        "random_auprc": 0.0197
+      },
+      "auroc": 0.6444,
+      "auprc": 0.0377,
+      "brier_score": 0.2054,
+      "operating_metrics": {
+        "threshold": 0.9097,
+        "sensitivity": 0.0,
+        "specificity": 0.9965,
+        "precision": 0.0,
+        "npv": 0.9802,
+        "f1_score": 0.0,
+        "confusion_matrix": {
+          "tp": 0,
+          "fp": 28,
+          "tn": 7865,
+          "fn": 159
+        }
+      },
+      "sensitivity": 0.0,
+      "specificity": 0.9965,
+      "positive_predictive_value": 0.0,
+      "negative_predictive_value": 0.9802,
+      "confusion_matrix": {
+        "true_positive": 0,
+        "false_positive": 28,
+        "true_negative": 7865,
+        "false_negative": 159
+      },
+      "threshold_evaluations": [
+        {
+          "threshold": 0.01,
+          "sensitivity": 0.9937,
+          "specificity": 0.0,
+          "precision": 0.0196,
+          "npv": 0.0,
+          "f1_score": 0.0385,
+          "confusion_matrix": {
+            "tp": 158,
+            "fp": 7893,
+            "tn": 0,
+            "fn": 1
+          }
+        },
+        {
+          "threshold": 0.02,
+          "sensitivity": 0.9937,
+          "specificity": 0.0005,
+          "precision": 0.0196,
+          "npv": 0.8,
+          "f1_score": 0.0385,
+          "confusion_matrix": {
+            "tp": 158,
+            "fp": 7889,
+            "tn": 4,
+            "fn": 1
+          }
+        },
+        {
+          "threshold": 0.03,
+          "sensitivity": 0.9937,
+          "specificity": 0.001,
+          "precision": 0.0196,
+          "npv": 0.8889,
+          "f1_score": 0.0385,
+          "confusion_matrix": {
+            "tp": 158,
+            "fp": 7885,
+            "tn": 8,
+            "fn": 1
+          }
+        },
+        {
+          "threshold": 0.05,
+          "sensitivity": 0.9937,
+          "specificity": 0.003,
+          "precision": 0.0197,
+          "npv": 0.96,
+          "f1_score": 0.0386,
+          "confusion_matrix": {
+            "tp": 158,
+            "fp": 7869,
+            "tn": 24,
+            "fn": 1
+          }
+        },
+        {
+          "threshold": 0.1,
+          "sensitivity": 0.9623,
+          "specificity": 0.0174,
+          "precision": 0.0193,
+          "npv": 0.958,
+          "f1_score": 0.0379,
+          "confusion_matrix": {
+            "tp": 153,
+            "fp": 7756,
+            "tn": 137,
+            "fn": 6
+          }
+        },
+        {
+          "threshold": 0.2,
+          "sensitivity": 0.8931,
+          "specificity": 0.1343,
+          "precision": 0.0204,
+          "npv": 0.9842,
+          "f1_score": 0.0398,
+          "confusion_matrix": {
+            "tp": 142,
+            "fp": 6833,
+            "tn": 1060,
+            "fn": 17
+          }
+        },
+        {
+          "threshold": 0.3,
+          "sensitivity": 0.8428,
+          "specificity": 0.3251,
+          "precision": 0.0245,
+          "npv": 0.9904,
+          "f1_score": 0.0477,
+          "confusion_matrix": {
+            "tp": 134,
+            "fp": 5327,
+            "tn": 2566,
+            "fn": 25
+          }
+        },
+        {
+          "threshold": 0.5,
+          "sensitivity": 0.5283,
+          "specificity": 0.6819,
+          "precision": 0.0324,
+          "npv": 0.9863,
+          "f1_score": 0.061,
+          "confusion_matrix": {
+            "tp": 84,
+            "fp": 2511,
+            "tn": 5382,
+            "fn": 75
+          }
+        }
+      ]
+    },
+    "selected_threshold": 0.9097
+  },
+  "xgboost_model": {
+    "eval_metrics": {
+      "n_samples": 8052,
+      "n_positive": 159,
+      "n_negative": 7893,
+      "prevalence": 0.0197,
+      "threshold": 0.021703926700911157,
+      "baselines": {
+        "all_negative_brier_score": 0.0197,
+        "prevalence_brier_score": 0.0194,
+        "random_auprc": 0.0197
+      },
+      "auroc": 0.6643,
+      "auprc": 0.0496,
+      "brier_score": 0.0193,
+      "operating_metrics": {
+        "threshold": 0.0217,
+        "sensitivity": 0.1132,
+        "specificity": 0.9473,
+        "precision": 0.0415,
+        "npv": 0.9815,
+        "f1_score": 0.0607,
+        "confusion_matrix": {
+          "tp": 18,
+          "fp": 416,
+          "tn": 7477,
+          "fn": 141
+        }
+      },
+      "sensitivity": 0.1132,
+      "specificity": 0.9473,
+      "positive_predictive_value": 0.0415,
+      "negative_predictive_value": 0.9815,
+      "confusion_matrix": {
+        "true_positive": 18,
+        "false_positive": 416,
+        "true_negative": 7477,
+        "false_negative": 141
+      },
+      "threshold_evaluations": [
+        {
+          "threshold": 0.01,
+          "sensitivity": 1.0,
+          "specificity": 0.0,
+          "precision": 0.0197,
+          "npv": 0.0,
+          "f1_score": 0.0387,
+          "confusion_matrix": {
+            "tp": 159,
+            "fp": 7893,
+            "tn": 0,
+            "fn": 0
+          }
+        },
+        {
+          "threshold": 0.02,
+          "sensitivity": 0.2642,
+          "specificity": 0.9004,
+          "precision": 0.0507,
+          "npv": 0.9838,
+          "f1_score": 0.0851,
+          "confusion_matrix": {
+            "tp": 42,
+            "fp": 786,
+            "tn": 7107,
+            "fn": 117
+          }
+        },
+        {
+          "threshold": 0.03,
+          "sensitivity": 0.0126,
+          "specificity": 0.9994,
+          "precision": 0.2857,
+          "npv": 0.9805,
+          "f1_score": 0.0241,
+          "confusion_matrix": {
+            "tp": 2,
+            "fp": 5,
+            "tn": 7888,
+            "fn": 157
+          }
+        },
+        {
+          "threshold": 0.05,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "precision": 0.0,
+          "npv": 0.9803,
+          "f1_score": 0.0,
+          "confusion_matrix": {
+            "tp": 0,
+            "fp": 0,
+            "tn": 7893,
+            "fn": 159
+          }
+        },
+        {
+          "threshold": 0.1,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "precision": 0.0,
+          "npv": 0.9803,
+          "f1_score": 0.0,
+          "confusion_matrix": {
+            "tp": 0,
+            "fp": 0,
+            "tn": 7893,
+            "fn": 159
+          }
+        },
+        {
+          "threshold": 0.2,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "precision": 0.0,
+          "npv": 0.9803,
+          "f1_score": 0.0,
+          "confusion_matrix": {
+            "tp": 0,
+            "fp": 0,
+            "tn": 7893,
+            "fn": 159
+          }
+        },
+        {
+          "threshold": 0.3,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "precision": 0.0,
+          "npv": 0.9803,
+          "f1_score": 0.0,
+          "confusion_matrix": {
+            "tp": 0,
+            "fp": 0,
+            "tn": 7893,
+            "fn": 159
+          }
+        },
+        {
+          "threshold": 0.5,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "precision": 0.0,
+          "npv": 0.9803,
+          "f1_score": 0.0,
+          "confusion_matrix": {
+            "tp": 0,
+            "fp": 0,
+            "tn": 7893,
+            "fn": 159
+          }
+        }
+      ]
+    },
+    "eval_metrics_default_threshold_0_5": {
+      "n_samples": 8052,
+      "n_positive": 159,
+      "n_negative": 7893,
+      "prevalence": 0.0197,
+      "threshold": 0.5,
+      "baselines": {
+        "all_negative_brier_score": 0.0197,
+        "prevalence_brier_score": 0.0194,
+        "random_auprc": 0.0197
+      },
+      "auroc": 0.6643,
+      "auprc": 0.0496,
+      "brier_score": 0.0193,
+      "operating_metrics": {
+        "threshold": 0.5,
+        "sensitivity": 0.0,
+        "specificity": 1.0,
+        "precision": 0.0,
+        "npv": 0.9803,
+        "f1_score": 0.0,
+        "confusion_matrix": {
+          "tp": 0,
+          "fp": 0,
+          "tn": 7893,
+          "fn": 159
+        }
+      },
+      "sensitivity": 0.0,
+      "specificity": 1.0,
+      "positive_predictive_value": 0.0,
+      "negative_predictive_value": 0.9803,
+      "confusion_matrix": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "true_negative": 7893,
+        "false_negative": 159
+      },
+      "threshold_evaluations": [
+        {
+          "threshold": 0.01,
+          "sensitivity": 1.0,
+          "specificity": 0.0,
+          "precision": 0.0197,
+          "npv": 0.0,
+          "f1_score": 0.0387,
+          "confusion_matrix": {
+            "tp": 159,
+            "fp": 7893,
+            "tn": 0,
+            "fn": 0
+          }
+        },
+        {
+          "threshold": 0.02,
+          "sensitivity": 0.2642,
+          "specificity": 0.9004,
+          "precision": 0.0507,
+          "npv": 0.9838,
+          "f1_score": 0.0851,
+          "confusion_matrix": {
+            "tp": 42,
+            "fp": 786,
+            "tn": 7107,
+            "fn": 117
+          }
+        },
+        {
+          "threshold": 0.03,
+          "sensitivity": 0.0126,
+          "specificity": 0.9994,
+          "precision": 0.2857,
+          "npv": 0.9805,
+          "f1_score": 0.0241,
+          "confusion_matrix": {
+            "tp": 2,
+            "fp": 5,
+            "tn": 7888,
+            "fn": 157
+          }
+        },
+        {
+          "threshold": 0.05,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "precision": 0.0,
+          "npv": 0.9803,
+          "f1_score": 0.0,
+          "confusion_matrix": {
+            "tp": 0,
+            "fp": 0,
+            "tn": 7893,
+            "fn": 159
+          }
+        },
+        {
+          "threshold": 0.1,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "precision": 0.0,
+          "npv": 0.9803,
+          "f1_score": 0.0,
+          "confusion_matrix": {
+            "tp": 0,
+            "fp": 0,
+            "tn": 7893,
+            "fn": 159
+          }
+        },
+        {
+          "threshold": 0.2,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "precision": 0.0,
+          "npv": 0.9803,
+          "f1_score": 0.0,
+          "confusion_matrix": {
+            "tp": 0,
+            "fp": 0,
+            "tn": 7893,
+            "fn": 159
+          }
+        },
+        {
+          "threshold": 0.3,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "precision": 0.0,
+          "npv": 0.9803,
+          "f1_score": 0.0,
+          "confusion_matrix": {
+            "tp": 0,
+            "fp": 0,
+            "tn": 7893,
+            "fn": 159
+          }
+        },
+        {
+          "threshold": 0.5,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "precision": 0.0,
+          "npv": 0.9803,
+          "f1_score": 0.0,
+          "confusion_matrix": {
+            "tp": 0,
+            "fp": 0,
+            "tn": 7893,
+            "fn": 159
+          }
+        }
+      ]
+    },
+    "eval_metrics_val_selected_threshold": {
+      "n_samples": 8052,
+      "n_positive": 159,
+      "n_negative": 7893,
+      "prevalence": 0.0197,
+      "threshold": 0.021703926700911157,
+      "baselines": {
+        "all_negative_brier_score": 0.0197,
+        "prevalence_brier_score": 0.0194,
+        "random_auprc": 0.0197
+      },
+      "auroc": 0.6643,
+      "auprc": 0.0496,
+      "brier_score": 0.0193,
+      "operating_metrics": {
+        "threshold": 0.0217,
+        "sensitivity": 0.1132,
+        "specificity": 0.9473,
+        "precision": 0.0415,
+        "npv": 0.9815,
+        "f1_score": 0.0607,
+        "confusion_matrix": {
+          "tp": 18,
+          "fp": 416,
+          "tn": 7477,
+          "fn": 141
+        }
+      },
+      "sensitivity": 0.1132,
+      "specificity": 0.9473,
+      "positive_predictive_value": 0.0415,
+      "negative_predictive_value": 0.9815,
+      "confusion_matrix": {
+        "true_positive": 18,
+        "false_positive": 416,
+        "true_negative": 7477,
+        "false_negative": 141
+      },
+      "threshold_evaluations": [
+        {
+          "threshold": 0.01,
+          "sensitivity": 1.0,
+          "specificity": 0.0,
+          "precision": 0.0197,
+          "npv": 0.0,
+          "f1_score": 0.0387,
+          "confusion_matrix": {
+            "tp": 159,
+            "fp": 7893,
+            "tn": 0,
+            "fn": 0
+          }
+        },
+        {
+          "threshold": 0.02,
+          "sensitivity": 0.2642,
+          "specificity": 0.9004,
+          "precision": 0.0507,
+          "npv": 0.9838,
+          "f1_score": 0.0851,
+          "confusion_matrix": {
+            "tp": 42,
+            "fp": 786,
+            "tn": 7107,
+            "fn": 117
+          }
+        },
+        {
+          "threshold": 0.03,
+          "sensitivity": 0.0126,
+          "specificity": 0.9994,
+          "precision": 0.2857,
+          "npv": 0.9805,
+          "f1_score": 0.0241,
+          "confusion_matrix": {
+            "tp": 2,
+            "fp": 5,
+            "tn": 7888,
+            "fn": 157
+          }
+        },
+        {
+          "threshold": 0.05,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "precision": 0.0,
+          "npv": 0.9803,
+          "f1_score": 0.0,
+          "confusion_matrix": {
+            "tp": 0,
+            "fp": 0,
+            "tn": 7893,
+            "fn": 159
+          }
+        },
+        {
+          "threshold": 0.1,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "precision": 0.0,
+          "npv": 0.9803,
+          "f1_score": 0.0,
+          "confusion_matrix": {
+            "tp": 0,
+            "fp": 0,
+            "tn": 7893,
+            "fn": 159
+          }
+        },
+        {
+          "threshold": 0.2,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "precision": 0.0,
+          "npv": 0.9803,
+          "f1_score": 0.0,
+          "confusion_matrix": {
+            "tp": 0,
+            "fp": 0,
+            "tn": 7893,
+            "fn": 159
+          }
+        },
+        {
+          "threshold": 0.3,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "precision": 0.0,
+          "npv": 0.9803,
+          "f1_score": 0.0,
+          "confusion_matrix": {
+            "tp": 0,
+            "fp": 0,
+            "tn": 7893,
+            "fn": 159
+          }
+        },
+        {
+          "threshold": 0.5,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "precision": 0.0,
+          "npv": 0.9803,
+          "f1_score": 0.0,
+          "confusion_matrix": {
+            "tp": 0,
+            "fp": 0,
+            "tn": 7893,
+            "fn": 159
+          }
+        }
+      ]
+    },
+    "selected_threshold": 0.0217,
+    "calibrated": true
+  },
+  "saved_model_artifact": "ml/models/phase2_candidate_ews_xgboost.pkl"
+}

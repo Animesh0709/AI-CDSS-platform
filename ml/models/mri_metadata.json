@@ -1,0 +1,51 @@
+{
+  "status": "trained",
+  "generated_at": "2026-10-11T20:58:02.776617+00:00",
+  "task": "Brain MRI tumour classification (4 classes)",
+  "classes": [
+    "glioma",
+    "meningioma",
+    "notumor",
+    "pituitary"
+  ],
+  "class_mapping": {
+    "0": "glioma",
+    "1": "meningioma",
+    "2": "notumor",
+    "3": "pituitary"
+  },
+  "models": {
+    "xgboost": {
+      "description": "XGBoost classifier on ViT-base-patch16-224 CLS embeddings",
+      "artifact": "mri_xgboost.joblib",
+      "accuracy": 0.9169,
+      "macro_f1": 0.9148
+    },
+    "svm": {
+      "description": "SVM (RBF, C=10) with StandardScaler on ViT embeddings",
+      "artifact": "mri_svm.joblib",
+      "accuracy": 0.9444,
+      "macro_f1": 0.9431
+    },
+    "vit": {
+      "description": "Fine-tuned google/vit-base-patch16-224 (4-class head, 3 epochs)",
+      "artifact": "mri_vit/",
+      "accuracy": 0.9469,
+      "macro_f1": 0.9457
+    }
+  },
+  "preprocessing": {
+    "input_size": "224x224 RGB",
+    "normalisation": "ImageNet mean/std",
+    "embedding_model": "google/vit-base-patch16-224 CLS token (768-dim)"
+  },
+  "dataset_provenance": "Brain Tumor MRI Dataset \u2014 typically sourced from Kaggle (sartajbhuvaji/brain-tumor-classification-mri). Verify licence and terms before use. Training/Testing split is dataset-provided (not randomly split here).",
+  "limitations": [
+    "Models trained on a single dataset; generalisation to other MRI scanners / populations is unknown.",
+    "Outputs are AI-assisted classification only and require review by a qualified clinician.",
+    "ViT embeddings are frozen during XGBoost/SVM training \u2014 a jointly fine-tuned pipeline may outperform.",
+    "No data augmentation applied during embedding extraction.",
+    "Class imbalance, if present in the dataset, is not corrected."
+  ],
+  "clinical_safety_notice": "All predictions are labelled 'AI-assisted classification \u2014 Predicted class'. Outputs are NOT a diagnosis. Clinician review is mandatory before any clinical action."
+}

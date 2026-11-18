@@ -1,0 +1,4 @@
+{
+  "optimal_threshold": 0.6003,
+  "tuned_on": "validation_set_pr_curve"
+}

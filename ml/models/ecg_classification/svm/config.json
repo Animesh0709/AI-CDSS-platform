@@ -1,0 +1,31 @@
+{
+  "target_classes": [
+    "NORM",
+    "MI",
+    "STTC",
+    "CD",
+    "HYP"
+  ],
+  "hyperparams": {
+    "C": 1.0,
+    "loss": "squared_hinge",
+    "dual": "auto",
+    "max_iter": 2000,
+    "random_state": 42,
+    "class_weight": "balanced"
+  },
+  "thresholds": {
+    "NORM": 0.0,
+    "MI": -0.1,
+    "STTC": 0.1,
+    "CD": 0.1,
+    "HYP": 0.3
+  },
+  "training_prevalences": {
+    "NORM": 0.4361005856011023,
+    "MI": 0.2514065908829946,
+    "STTC": 0.23464232403260996,
+    "CD": 0.22430818693305776,
+    "HYP": 0.12165575841083937
+  }
+}

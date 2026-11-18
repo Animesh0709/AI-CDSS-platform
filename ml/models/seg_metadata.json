@@ -1,0 +1,100 @@
+{
+  "task": "Multimodal 3D Brain Tumor Segmentation",
+  "architectures": {
+    "unet3d": {
+      "name": "3D U-Net",
+      "artifact": "ml/models/seg_unet3d.pt",
+      "channels": [
+        16,
+        32,
+        64,
+        128
+      ],
+      "dropout": 0.2
+    },
+    "attunet3d": {
+      "name": "3D Attention U-Net",
+      "artifact": "ml/models/seg_attunet3d.pt",
+      "channels": [
+        16,
+        32,
+        64,
+        128
+      ],
+      "attention_gates": true,
+      "dropout": 0.2
+    },
+    "nnunet": {
+      "name": "3D nnU-Net v2 (DynUNet)",
+      "artifact": "ml/models/seg_nnunet.pt",
+      "residual_blocks": true,
+      "dropout": 0.2
+    },
+    "brats": {
+      "name": "BraTS Pre-trained SegResNet",
+      "artifact": "ml/models/seg_brats.pt",
+      "init_filters": 16,
+      "blocks_down": [1, 2, 2, 4],
+      "blocks_up": [1, 1, 1],
+      "dropout": 0.2,
+      "parameters": 4702227,
+      "data_source": "BraTS 2018 / MONAI Model Zoo Benchmark"
+    }
+  },
+  "input_modalities": [
+    {
+      "channel": 0,
+      "name": "FLAIR",
+      "description": "Fluid-attenuated inversion recovery"
+    },
+    {
+      "channel": 1,
+      "name": "T1w",
+      "description": "T1-weighted structural MRI"
+    },
+    {
+      "channel": 2,
+      "name": "T1ce",
+      "description": "T1-weighted contrast-enhanced (gadolinium)"
+    },
+    {
+      "channel": 3,
+      "name": "T2w",
+      "description": "T2-weighted structural MRI"
+    }
+  ],
+  "target_subregions": [
+    {
+      "channel": 0,
+      "code": "WT",
+      "name": "Whole Tumor",
+      "color": "#10B981",
+      "description": "Peritumoral edema + non-enhancing core + enhancing core"
+    },
+    {
+      "channel": 1,
+      "code": "TC",
+      "name": "Tumor Core",
+      "color": "#F59E0B",
+      "description": "Non-enhancing necrotic core + active enhancing core"
+    },
+    {
+      "channel": 2,
+      "code": "ET",
+      "name": "Enhancing Tumor",
+      "color": "#EF4444",
+      "description": "Actively vascularized enhancing tumor rim"
+    }
+  ],
+  "uncertainty_method": "Monte Carlo Dropout Predictive Entropy (H) & Epistemic Variance",
+  "volume_units": "cm\u00b3 (converted from physical voxel spacing in mm\u00b3 / 1000)",
+  "primary_benchmark_cohort": "UPenn-GBM (TCIA) [Primary: 18 Subjects]",
+  "strict_patient_splits": true,
+  "external_validation_cohort": "MSD Task01 BrainTumour [Pending High-Throughput Remote Processing]",
+  "threshold_tuning_status": "Validation cohort only (4 patients: 00020_11, 00021_11, 00026_11, 00029_11)",
+  "held_out_test_status": "4 strictly unseen patients (00030_11, 00031_11, 00033_11, 00035_11)",
+  "architecture_notes": {
+    "nnunet": "MONAI DynUNet with nnU-Net heuristic residual topology. Not standalone CLI nnUNetv2 framework.",
+    "uncertainty_distinction": "Spatial predictive entropy H(x) via MC-Dropout measures epistemic ambiguity, distinct from operating threshold selection."
+  }
+}

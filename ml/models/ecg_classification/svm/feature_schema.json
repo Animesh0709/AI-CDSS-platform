@@ -1,0 +1,32 @@
+{
+  "total_features": 1320,
+  "statistical_and_morphological_features_per_lead": 10,
+  "leads_order": [
+    "I",
+    "II",
+    "III",
+    "aVR",
+    "aVL",
+    "aVF",
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6"
+  ],
+  "statistical_feature_names": [
+    "mean",
+    "std",
+    "min",
+    "max",
+    "peak_to_peak_amplitude",
+    "median",
+    "skewness",
+    "kurtosis",
+    "root_mean_square",
+    "interquartile_range"
+  ],
+  "waveform_profile_points_per_lead": 100,
+  "decimation_factor": 10
+}
