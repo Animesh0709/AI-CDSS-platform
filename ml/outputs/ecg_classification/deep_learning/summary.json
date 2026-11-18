@@ -1,0 +1,376 @@
+{
+  "status": "COMPLETED",
+  "phase": "7.4",
+  "dataset_version": "PTB-XL v1.0.3 (100 Hz)",
+  "training_timestamp_utc": "2026-10-31T18:27:48.358547+00:00",
+  "artifact_type": "PRODUCTION_BASELINE_1D_RESNET",
+  "model_architecture": "ECGResNet1D (4 residual stages, GAP, 5-logit linear head)",
+  "total_parameters": 725957,
+  "hardware_device": "mps",
+  "target_classes": [
+    "NORM",
+    "MI",
+    "STTC",
+    "CD",
+    "HYP"
+  ],
+  "training_config": {
+    "architecture": "ECGResNet1D",
+    "in_channels": 12,
+    "num_classes": 5,
+    "base_channels": 32,
+    "total_parameters": 725957,
+    "batch_size": 128,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "max_epochs": 15,
+    "early_stopping_patience": 4,
+    "early_stopping_best_epoch": 8,
+    "random_seed": 42,
+    "device": "mps",
+    "target_classes": [
+      "NORM",
+      "MI",
+      "STTC",
+      "CD",
+      "HYP"
+    ],
+    "thresholds": {
+      "NORM": 0.65,
+      "MI": 0.55,
+      "STTC": 0.65,
+      "CD": 0.75,
+      "HYP": 0.55
+    }
+  },
+  "manifest_counts": {
+    "train": {
+      "records": 17418,
+      "patients": 15023
+    },
+    "val": {
+      "records": 2183,
+      "patients": 1942
+    },
+    "test": {
+      "records": 2198,
+      "patients": 1904
+    }
+  },
+  "timing": {
+    "data_loading_and_normalization_sec": 99.84,
+    "training_duration_sec": 152.51,
+    "test_prediction_duration_sec": 1.2502
+  },
+  "training_history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.6419,
+      "val_loss": 0.6754,
+      "val_macro_f1": 0.6829,
+      "lr": 0.000989
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.5443,
+      "val_loss": 0.6367,
+      "val_macro_f1": 0.6798,
+      "lr": 0.000957
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.5118,
+      "val_loss": 0.6411,
+      "val_macro_f1": 0.6698,
+      "lr": 0.000905
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.4913,
+      "val_loss": 0.6292,
+      "val_macro_f1": 0.6748,
+      "lr": 0.000836
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.4646,
+      "val_loss": 0.5847,
+      "val_macro_f1": 0.6959,
+      "lr": 0.000752
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.445,
+      "val_loss": 0.5611,
+      "val_macro_f1": 0.6966,
+      "lr": 0.000658
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.4275,
+      "val_loss": 0.5878,
+      "val_macro_f1": 0.6916,
+      "lr": 0.000557
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.3957,
+      "val_loss": 0.5971,
+      "val_macro_f1": 0.7322,
+      "lr": 0.000453
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.3636,
+      "val_loss": 0.6737,
+      "val_macro_f1": 0.6984,
+      "lr": 0.000352
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.3256,
+      "val_loss": 0.6796,
+      "val_macro_f1": 0.7209,
+      "lr": 0.000258
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.2806,
+      "val_loss": 0.6588,
+      "val_macro_f1": 0.7169,
+      "lr": 0.000174
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.2347,
+      "val_loss": 0.644,
+      "val_macro_f1": 0.7047,
+      "lr": 0.000105
+    }
+  ],
+  "selected_thresholds": {
+    "NORM": 0.65,
+    "MI": 0.55,
+    "STTC": 0.65,
+    "CD": 0.75,
+    "HYP": 0.55
+  },
+  "validation_metrics": {
+    "per_class": {
+      "NORM": {
+        "support": 955,
+        "total_samples": 2183,
+        "predicted_positive_count": 1044,
+        "prevalence": 0.4375,
+        "threshold": 0.65,
+        "precision": 0.8238,
+        "recall": 0.9005,
+        "f1_score": 0.8604,
+        "auroc": 0.947,
+        "auprc": 0.9261,
+        "confusion_matrix": {
+          "tp": 860,
+          "fp": 184,
+          "fn": 95,
+          "tn": 1044
+        }
+      },
+      "MI": {
+        "support": 540,
+        "total_samples": 2183,
+        "predicted_positive_count": 590,
+        "prevalence": 0.2474,
+        "threshold": 0.55,
+        "precision": 0.7085,
+        "recall": 0.7741,
+        "f1_score": 0.7398,
+        "auroc": 0.9199,
+        "auprc": 0.8153,
+        "confusion_matrix": {
+          "tp": 418,
+          "fp": 172,
+          "fn": 122,
+          "tn": 1471
+        }
+      },
+      "STTC": {
+        "support": 515,
+        "total_samples": 2183,
+        "predicted_positive_count": 515,
+        "prevalence": 0.2359,
+        "threshold": 0.65,
+        "precision": 0.7417,
+        "recall": 0.7417,
+        "f1_score": 0.7417,
+        "auroc": 0.933,
+        "auprc": 0.788,
+        "confusion_matrix": {
+          "tp": 382,
+          "fp": 133,
+          "fn": 133,
+          "tn": 1535
+        }
+      },
+      "CD": {
+        "support": 495,
+        "total_samples": 2183,
+        "predicted_positive_count": 460,
+        "prevalence": 0.2268,
+        "threshold": 0.75,
+        "precision": 0.7783,
+        "recall": 0.7232,
+        "f1_score": 0.7497,
+        "auroc": 0.9162,
+        "auprc": 0.8252,
+        "confusion_matrix": {
+          "tp": 358,
+          "fp": 102,
+          "fn": 137,
+          "tn": 1586
+        }
+      },
+      "HYP": {
+        "support": 268,
+        "total_samples": 2183,
+        "predicted_positive_count": 348,
+        "prevalence": 0.1228,
+        "threshold": 0.55,
+        "precision": 0.5402,
+        "recall": 0.7015,
+        "f1_score": 0.6104,
+        "auroc": 0.8992,
+        "auprc": 0.6404,
+        "confusion_matrix": {
+          "tp": 188,
+          "fp": 160,
+          "fn": 80,
+          "tn": 1755
+        }
+      }
+    },
+    "aggregate": {
+      "macro_f1": 0.7404,
+      "micro_f1": 0.77,
+      "macro_auroc": 0.923,
+      "macro_auprc": 0.799,
+      "hamming_loss": 0.1208,
+      "subset_accuracy": 0.6001
+    }
+  },
+  "test_metrics": {
+    "per_class": {
+      "NORM": {
+        "support": 963,
+        "total_samples": 2198,
+        "predicted_positive_count": 1085,
+        "prevalence": 0.4381,
+        "threshold": 0.65,
+        "precision": 0.8055,
+        "recall": 0.9076,
+        "f1_score": 0.8535,
+        "auroc": 0.9437,
+        "auprc": 0.9199,
+        "confusion_matrix": {
+          "tp": 874,
+          "fp": 211,
+          "fn": 89,
+          "tn": 1024
+        }
+      },
+      "MI": {
+        "support": 550,
+        "total_samples": 2198,
+        "predicted_positive_count": 594,
+        "prevalence": 0.2502,
+        "threshold": 0.55,
+        "precision": 0.6886,
+        "recall": 0.7436,
+        "f1_score": 0.715,
+        "auroc": 0.9135,
+        "auprc": 0.8064,
+        "confusion_matrix": {
+          "tp": 409,
+          "fp": 185,
+          "fn": 141,
+          "tn": 1463
+        }
+      },
+      "STTC": {
+        "support": 506,
+        "total_samples": 2198,
+        "predicted_positive_count": 505,
+        "prevalence": 0.2302,
+        "threshold": 0.65,
+        "precision": 0.7465,
+        "recall": 0.7451,
+        "f1_score": 0.7458,
+        "auroc": 0.9293,
+        "auprc": 0.8071,
+        "confusion_matrix": {
+          "tp": 377,
+          "fp": 128,
+          "fn": 129,
+          "tn": 1564
+        }
+      },
+      "CD": {
+        "support": 496,
+        "total_samples": 2198,
+        "predicted_positive_count": 442,
+        "prevalence": 0.2257,
+        "threshold": 0.75,
+        "precision": 0.767,
+        "recall": 0.6835,
+        "f1_score": 0.7228,
+        "auroc": 0.909,
+        "auprc": 0.8082,
+        "confusion_matrix": {
+          "tp": 339,
+          "fp": 103,
+          "fn": 157,
+          "tn": 1599
+        }
+      },
+      "HYP": {
+        "support": 262,
+        "total_samples": 2198,
+        "predicted_positive_count": 327,
+        "prevalence": 0.1192,
+        "threshold": 0.55,
+        "precision": 0.5382,
+        "recall": 0.6718,
+        "f1_score": 0.5976,
+        "auroc": 0.9,
+        "auprc": 0.6551,
+        "confusion_matrix": {
+          "tp": 176,
+          "fp": 151,
+          "fn": 86,
+          "tn": 1785
+        }
+      }
+    },
+    "aggregate": {
+      "macro_f1": 0.727,
+      "micro_f1": 0.7592,
+      "macro_auroc": 0.9191,
+      "macro_auprc": 0.7993,
+      "hamming_loss": 0.1256,
+      "subset_accuracy": 0.5878
+    }
+  },
+  "prevention_of_data_leakage": {
+    "channel_normalization_fitted_strictly_on_train": true,
+    "thresholds_optimized_strictly_on_val": true,
+    "test_set_strictly_evaluation_only": true,
+    "patient_isolation_verified": true
+  },
+  "explainability_ready": {
+    "last_conv_feature_map_accessible": true,
+    "feature_map_dimensions": [
+      128,
+      32
+    ],
+    "supports_grad_cam": true
+  }
+}

@@ -1,0 +1,81 @@
+[
+  {
+    "example_category": "correct_mi_tp",
+    "ecg_id": 162,
+    "target_superclass": "MI",
+    "ground_truth_superclasses": [
+      "MI",
+      "STTC",
+      "CD",
+      "HYP"
+    ],
+    "model_prediction": {
+      "logit": 2.0753,
+      "probability": 0.8885,
+      "threshold": 0.55,
+      "decision_positive": true
+    },
+    "integrated_gradients_convergence": {
+      "completeness_error": 0.053185,
+      "relative_error_pct": 1.2725
+    },
+    "visualization_file": "explanation_correct_mi_tp_ecg_162_MI.png"
+  },
+  {
+    "example_category": "correct_norm_tp",
+    "ecg_id": 9,
+    "target_superclass": "NORM",
+    "ground_truth_superclasses": [
+      "NORM"
+    ],
+    "model_prediction": {
+      "logit": 3.6792,
+      "probability": 0.9754,
+      "threshold": 0.65,
+      "decision_positive": true
+    },
+    "integrated_gradients_convergence": {
+      "completeness_error": 0.036041,
+      "relative_error_pct": 0.2721
+    },
+    "visualization_file": "explanation_correct_norm_tp_ecg_9_NORM.png"
+  },
+  {
+    "example_category": "misclassified_mi_fn",
+    "ecg_id": 63,
+    "target_superclass": "MI",
+    "ground_truth_superclasses": [
+      "MI"
+    ],
+    "model_prediction": {
+      "logit": 0.0853,
+      "probability": 0.5213,
+      "threshold": 0.55,
+      "decision_positive": false
+    },
+    "integrated_gradients_convergence": {
+      "completeness_error": 6e-06,
+      "relative_error_pct": 0.0003
+    },
+    "visualization_file": "explanation_misclassified_mi_fn_ecg_63_MI.png"
+  },
+  {
+    "example_category": "misclassified_mi_fp",
+    "ecg_id": 132,
+    "target_superclass": "MI",
+    "ground_truth_superclasses": [
+      "NORM"
+    ],
+    "model_prediction": {
+      "logit": 0.8062,
+      "probability": 0.6913,
+      "threshold": 0.55,
+      "decision_positive": true
+    },
+    "integrated_gradients_convergence": {
+      "completeness_error": 0.004139,
+      "relative_error_pct": 0.1422
+    },
+    "visualization_file": "explanation_misclassified_mi_fp_ecg_132_MI.png"
+  }
+]

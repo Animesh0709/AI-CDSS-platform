@@ -1,0 +1,132 @@
+{
+  "timestamp_utc": "2026-10-31T18:14:33.683019+00:00",
+  "models_compared": [
+    "XGBoost (Phase 7.2)",
+    "LinearSVM (Phase 7.3)"
+  ],
+  "dataset_splits": {
+    "train": {
+      "records": 17418,
+      "patients": 15023
+    },
+    "val": {
+      "records": 2183,
+      "patients": 1942
+    },
+    "test": {
+      "records": 2198,
+      "patients": 1904
+    }
+  },
+  "aggregate_comparison": {
+    "macro_f1": {
+      "xgboost": 0.6227,
+      "svm": 0.5699
+    },
+    "micro_f1": {
+      "xgboost": 0.6496,
+      "svm": 0.602
+    },
+    "macro_auroc": {
+      "xgboost": 0.8446,
+      "svm": 0.7993
+    },
+    "macro_auprc": {
+      "xgboost": 0.6713,
+      "svm": 0.5661
+    },
+    "hamming_loss": {
+      "xgboost": 0.1975,
+      "svm": 0.2282
+    },
+    "subset_accuracy": {
+      "xgboost": 0.3944,
+      "svm": 0.3567
+    }
+  },
+  "per_class_f1_comparison": {
+    "NORM": {
+      "xgboost": 0.7669,
+      "svm": 0.7379,
+      "better": "XGBoost"
+    },
+    "MI": {
+      "xgboost": 0.5584,
+      "svm": 0.5204,
+      "better": "XGBoost"
+    },
+    "STTC": {
+      "xgboost": 0.623,
+      "svm": 0.5583,
+      "better": "XGBoost"
+    },
+    "CD": {
+      "xgboost": 0.5859,
+      "svm": 0.5494,
+      "better": "XGBoost"
+    },
+    "HYP": {
+      "xgboost": 0.5793,
+      "svm": 0.4838,
+      "better": "XGBoost"
+    }
+  },
+  "per_class_recall_comparison": {
+    "NORM": {
+      "xgboost": 0.8577,
+      "svm": 0.8141,
+      "better": "XGBoost"
+    },
+    "MI": {
+      "xgboost": 0.6909,
+      "svm": 0.6945,
+      "better": "SVM"
+    },
+    "STTC": {
+      "xgboost": 0.751,
+      "svm": 0.6245,
+      "better": "XGBoost"
+    },
+    "CD": {
+      "xgboost": 0.5605,
+      "svm": 0.5665,
+      "better": "SVM"
+    },
+    "HYP": {
+      "xgboost": 0.5649,
+      "svm": 0.5115,
+      "better": "XGBoost"
+    }
+  },
+  "per_class_precision_comparison": {
+    "NORM": {
+      "xgboost": 0.6935,
+      "svm": 0.6747,
+      "better": "XGBoost"
+    },
+    "MI": {
+      "xgboost": 0.4686,
+      "svm": 0.4161,
+      "better": "XGBoost"
+    },
+    "STTC": {
+      "xgboost": 0.5322,
+      "svm": 0.5048,
+      "better": "XGBoost"
+    },
+    "CD": {
+      "xgboost": 0.6137,
+      "svm": 0.5332,
+      "better": "XGBoost"
+    },
+    "HYP": {
+      "xgboost": 0.5944,
+      "svm": 0.4589,
+      "better": "XGBoost"
+    }
+  },
+  "model_size_bytes": {
+    "xgboost_models_pkl": 866212,
+    "svm_models_pkl": 54296
+  }
+}

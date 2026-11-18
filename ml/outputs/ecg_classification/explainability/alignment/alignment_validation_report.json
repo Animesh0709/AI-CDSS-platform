@@ -1,0 +1,64 @@
+{
+  "checks": {
+    "layout_geometry_valid": {
+      "status": "PASS",
+      "boxes_computed": 13,
+      "notes": []
+    },
+    "missing_lead_handling": {
+      "status": "PASS",
+      "confident_count": 2,
+      "unavailable_count": 10
+    },
+    "low_confidence_gating": {
+      "status": "PASS",
+      "uncertain_count": 12
+    },
+    "uncalibrated_image_gating": {
+      "status": "PASS",
+      "calibration_verified": false,
+      "uncertain_lead_count": 12
+    },
+    "original_image_immutability": {
+      "status": "PASS",
+      "bytes_preserved": true
+    }
+  },
+  "synthetic_validation": {
+    "image_type": "SYNTHETIC_RENDER",
+    "image_path": "ml/data/ecg/sample_synthetic_12lead.png",
+    "image_dimensions": [
+      1665,
+      1065
+    ],
+    "reconstruction_status": "SUCCESS",
+    "calibration_verified": true,
+    "target_class": "MI",
+    "target_logit": 1.8053733110427856,
+    "target_probability": 0.8588017225265503,
+    "confident_lead_count": 12,
+    "uncertain_lead_count": 0,
+    "unavailable_lead_count": 0,
+    "overall_alignment_coverage_pct": 100.0,
+    "visualization_artifact": "ml/outputs/ecg_classification/explainability/alignment/synthetic_alignment_prototype.png"
+  },
+  "real_validation": {
+    "image_type": "REAL_PHOTOGRAPH",
+    "image_path": "uploads/ecg/processed_test/ecg_scan_processed.png",
+    "image_dimensions": [
+      1665,
+      1065
+    ],
+    "reconstruction_status": "WARNING",
+    "calibration_verified": false,
+    "target_class": "HYP",
+    "target_logit": 21.276355743408203,
+    "target_probability": 1.0,
+    "confident_lead_count": 0,
+    "uncertain_lead_count": 12,
+    "unavailable_lead_count": 0,
+    "overall_alignment_coverage_pct": 0.0,
+    "visualization_artifact": "ml/outputs/ecg_classification/explainability/alignment/real_photograph_alignment_prototype.png"
+  },
+  "overall_verdict": "PASS"
+}

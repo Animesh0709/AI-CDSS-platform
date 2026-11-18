@@ -1,0 +1,120 @@
+{
+  "timestamp_utc": "2026-10-31T18:27:48.358547+00:00",
+  "models_compared": [
+    "XGBoost (1320 engineered features)",
+    "LinearSVM (1320 engineered features)",
+    "1D ResNet (raw 12x1000 waveforms)"
+  ],
+  "dataset_splits": {
+    "train": {
+      "records": 17418,
+      "patients": 15023
+    },
+    "val": {
+      "records": 2183,
+      "patients": 1942
+    },
+    "test": {
+      "records": 2198,
+      "patients": 1904
+    }
+  },
+  "aggregate_comparison": {
+    "macro_f1": {
+      "xgboost": 0.6227,
+      "svm": 0.5699,
+      "resnet1d": 0.727
+    },
+    "micro_f1": {
+      "xgboost": 0.6496,
+      "svm": 0.602,
+      "resnet1d": 0.7592
+    },
+    "macro_auroc": {
+      "xgboost": 0.8446,
+      "svm": 0.7993,
+      "resnet1d": 0.9191
+    },
+    "macro_auprc": {
+      "xgboost": 0.6713,
+      "svm": 0.5661,
+      "resnet1d": 0.7993
+    },
+    "subset_accuracy": {
+      "xgboost": 0.3944,
+      "svm": 0.3567,
+      "resnet1d": 0.5878
+    },
+    "hamming_loss": {
+      "xgboost": 0.1975,
+      "svm": 0.2282,
+      "resnet1d": 0.1256
+    }
+  },
+  "per_class_f1_comparison": {
+    "NORM": {
+      "xgboost": 0.7669,
+      "svm": 0.7379,
+      "resnet1d": 0.8535
+    },
+    "MI": {
+      "xgboost": 0.5584,
+      "svm": 0.5204,
+      "resnet1d": 0.715
+    },
+    "STTC": {
+      "xgboost": 0.623,
+      "svm": 0.5583,
+      "resnet1d": 0.7458
+    },
+    "CD": {
+      "xgboost": 0.5859,
+      "svm": 0.5494,
+      "resnet1d": 0.7228
+    },
+    "HYP": {
+      "xgboost": 0.5793,
+      "svm": 0.4838,
+      "resnet1d": 0.5976
+    }
+  },
+  "per_class_recall_comparison": {
+    "NORM": {
+      "xgboost": 0.8577,
+      "svm": 0.8141,
+      "resnet1d": 0.9076
+    },
+    "MI": {
+      "xgboost": 0.6909,
+      "svm": 0.6945,
+      "resnet1d": 0.7436
+    },
+    "STTC": {
+      "xgboost": 0.751,
+      "svm": 0.6245,
+      "resnet1d": 0.7451
+    },
+    "CD": {
+      "xgboost": 0.5605,
+      "svm": 0.5665,
+      "resnet1d": 0.6835
+    },
+    "HYP": {
+      "xgboost": 0.5649,
+      "svm": 0.5115,
+      "resnet1d": 0.6718
+    }
+  },
+  "efficiency_and_footprint": {
+    "model_artifact_size_bytes": {
+      "xgboost": 866212,
+      "svm": 54296,
+      "resnet1d": 2940981
+    },
+    "test_inference_time_sec": {
+      "svm": 0.0769,
+      "xgboost": 0.15,
+      "resnet1d": 1.2502
+    }
+  }
+}

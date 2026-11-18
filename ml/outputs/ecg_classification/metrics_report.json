@@ -1,0 +1,206 @@
+{
+  "validation": {
+    "per_class": {
+      "NORM": {
+        "support": 955,
+        "total_samples": 2183,
+        "predicted_positive_count": 1184,
+        "prevalence": 0.4375,
+        "threshold": 0.45,
+        "precision": 0.7171,
+        "recall": 0.889,
+        "f1_score": 0.7938,
+        "auroc": 0.8915,
+        "auprc": 0.8478,
+        "confusion_matrix": {
+          "tp": 849,
+          "fp": 335,
+          "fn": 106,
+          "tn": 893
+        }
+      },
+      "MI": {
+        "support": 540,
+        "total_samples": 2183,
+        "predicted_positive_count": 823,
+        "prevalence": 0.2474,
+        "threshold": 0.45,
+        "precision": 0.4982,
+        "recall": 0.7593,
+        "f1_score": 0.6016,
+        "auroc": 0.8191,
+        "auprc": 0.6254,
+        "confusion_matrix": {
+          "tp": 410,
+          "fp": 413,
+          "fn": 130,
+          "tn": 1230
+        }
+      },
+      "STTC": {
+        "support": 515,
+        "total_samples": 2183,
+        "predicted_positive_count": 722,
+        "prevalence": 0.2359,
+        "threshold": 0.5,
+        "precision": 0.5554,
+        "recall": 0.7786,
+        "f1_score": 0.6483,
+        "auroc": 0.8725,
+        "auprc": 0.6759,
+        "confusion_matrix": {
+          "tp": 401,
+          "fp": 321,
+          "fn": 114,
+          "tn": 1347
+        }
+      },
+      "CD": {
+        "support": 495,
+        "total_samples": 2183,
+        "predicted_positive_count": 444,
+        "prevalence": 0.2268,
+        "threshold": 0.6,
+        "precision": 0.6847,
+        "recall": 0.6141,
+        "f1_score": 0.6475,
+        "auroc": 0.8361,
+        "auprc": 0.6732,
+        "confusion_matrix": {
+          "tp": 304,
+          "fp": 140,
+          "fn": 191,
+          "tn": 1548
+        }
+      },
+      "HYP": {
+        "support": 268,
+        "total_samples": 2183,
+        "predicted_positive_count": 257,
+        "prevalence": 0.1228,
+        "threshold": 0.65,
+        "precision": 0.5564,
+        "recall": 0.5336,
+        "f1_score": 0.5448,
+        "auroc": 0.8768,
+        "auprc": 0.5941,
+        "confusion_matrix": {
+          "tp": 143,
+          "fp": 114,
+          "fn": 125,
+          "tn": 1801
+        }
+      }
+    },
+    "aggregate": {
+      "macro_f1": 0.6472,
+      "micro_f1": 0.6793,
+      "macro_auroc": 0.8592,
+      "macro_auprc": 0.6833,
+      "hamming_loss": 0.1822,
+      "subset_accuracy": 0.4269
+    }
+  },
+  "test": {
+    "per_class": {
+      "NORM": {
+        "support": 963,
+        "total_samples": 2198,
+        "predicted_positive_count": 1191,
+        "prevalence": 0.4381,
+        "threshold": 0.45,
+        "precision": 0.6935,
+        "recall": 0.8577,
+        "f1_score": 0.7669,
+        "auroc": 0.8735,
+        "auprc": 0.831,
+        "confusion_matrix": {
+          "tp": 826,
+          "fp": 365,
+          "fn": 137,
+          "tn": 870
+        }
+      },
+      "MI": {
+        "support": 550,
+        "total_samples": 2198,
+        "predicted_positive_count": 811,
+        "prevalence": 0.2502,
+        "threshold": 0.45,
+        "precision": 0.4686,
+        "recall": 0.6909,
+        "f1_score": 0.5584,
+        "auroc": 0.7991,
+        "auprc": 0.5967,
+        "confusion_matrix": {
+          "tp": 380,
+          "fp": 431,
+          "fn": 170,
+          "tn": 1217
+        }
+      },
+      "STTC": {
+        "support": 506,
+        "total_samples": 2198,
+        "predicted_positive_count": 714,
+        "prevalence": 0.2302,
+        "threshold": 0.5,
+        "precision": 0.5322,
+        "recall": 0.751,
+        "f1_score": 0.623,
+        "auroc": 0.8603,
+        "auprc": 0.6492,
+        "confusion_matrix": {
+          "tp": 380,
+          "fp": 334,
+          "fn": 126,
+          "tn": 1358
+        }
+      },
+      "CD": {
+        "support": 496,
+        "total_samples": 2198,
+        "predicted_positive_count": 453,
+        "prevalence": 0.2257,
+        "threshold": 0.6,
+        "precision": 0.6137,
+        "recall": 0.5605,
+        "f1_score": 0.5859,
+        "auroc": 0.8171,
+        "auprc": 0.6635,
+        "confusion_matrix": {
+          "tp": 278,
+          "fp": 175,
+          "fn": 218,
+          "tn": 1527
+        }
+      },
+      "HYP": {
+        "support": 262,
+        "total_samples": 2198,
+        "predicted_positive_count": 249,
+        "prevalence": 0.1192,
+        "threshold": 0.65,
+        "precision": 0.5944,
+        "recall": 0.5649,
+        "f1_score": 0.5793,
+        "auroc": 0.8732,
+        "auprc": 0.6161,
+        "confusion_matrix": {
+          "tp": 148,
+          "fp": 101,
+          "fn": 114,
+          "tn": 1835
+        }
+      }
+    },
+    "aggregate": {
+      "macro_f1": 0.6227,
+      "micro_f1": 0.6496,
+      "macro_auroc": 0.8446,
+      "macro_auprc": 0.6713,
+      "hamming_loss": 0.1975,
+      "subset_accuracy": 0.3944
+    }
+  }
+}

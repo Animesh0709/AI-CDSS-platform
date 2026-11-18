@@ -1,0 +1,113 @@
+{
+  "scenario_results": {
+    "scenario_1_clean_synthetic": {
+      "processing_outcome": "COMPLETED",
+      "classification_available": true,
+      "queried_class": "MI",
+      "probabilities": {
+        "NORM": 0.0566,
+        "MI": 0.8645,
+        "STTC": 0.6424,
+        "CD": 0.1565,
+        "HYP": 0.0015
+      },
+      "attribution_available": true,
+      "completeness_error": 0.0306,
+      "alignment_coverage_pct": 100.0,
+      "confident_lead_count": 12,
+      "uncertain_lead_count": 0,
+      "calibration_status": "VERIFIED",
+      "measurements_available": true,
+      "warnings": []
+    },
+    "scenario_2_difficult_synthetic": {
+      "processing_outcome": "PARTIAL_UNCERTAIN",
+      "classification_available": true,
+      "queried_class": "MI",
+      "probabilities": {
+        "NORM": 0.0734,
+        "MI": 0.698,
+        "STTC": 0.3102,
+        "CD": 0.0956,
+        "HYP": 0.0038
+      },
+      "attribution_available": true,
+      "completeness_error": 0.0064,
+      "alignment_coverage_pct": 66.66666666666666,
+      "confident_lead_count": 8,
+      "uncertain_lead_count": 4,
+      "calibration_status": "VERIFIED",
+      "measurements_available": true,
+      "warnings": [
+        "4 leads exhibit low confidence, clipping, or unverified calibration and are flagged UNCERTAIN."
+      ]
+    },
+    "scenario_3_photographed_unverified": {
+      "processing_outcome": "PARTIAL_UNCERTAIN",
+      "classification_available": true,
+      "queried_class": "HYP",
+      "probabilities": {
+        "NORM": 0.0,
+        "MI": 0.0,
+        "STTC": 0.0,
+        "CD": 0.0,
+        "HYP": 0.9829
+      },
+      "attribution_available": true,
+      "completeness_error": 9.8522,
+      "alignment_coverage_pct": 0.0,
+      "confident_lead_count": 0,
+      "uncertain_lead_count": 4,
+      "calibration_status": "UNVERIFIED_PIXEL_DOMAIN",
+      "measurements_available": true,
+      "warnings": [
+        "Image calibration is unverified. While lead geometry is mapped, voltage amplitude and time measurements are strictly pixel-domain offsets and must NOT be interpreted as physical mV or mm/s.",
+        "4 leads exhibit low confidence, clipping, or unverified calibration and are flagged UNCERTAIN."
+      ]
+    },
+    "scenario_4_invalid_layout": {
+      "processing_outcome": "REJECTED_AT_IMAGE_VALIDATION",
+      "http_status": 422,
+      "detail": "Image dimensions (30, 30) are too small for an ECG scan.",
+      "classification_available": false,
+      "attribution_available": false,
+      "alignment_coverage_pct": 0.0,
+      "calibration_status": "N/A",
+      "measurements_available": false,
+      "warnings": [
+        "Image dimensions (30, 30) below minimum threshold for 12-lead reconstruction."
+      ]
+    },
+    "scenario_5_reconstruction_uncertainty": {
+      "processing_outcome": "PARTIAL_UNCERTAIN",
+      "classification_available": true,
+      "queried_class": "CD",
+      "probabilities": {
+        "NORM": 0.0001,
+        "MI": 0.1123,
+        "STTC": 0.8542,
+        "CD": 0.9998,
+        "HYP": 0.8558
+      },
+      "attribution_available": true,
+      "completeness_error": 0.0004,
+      "alignment_coverage_pct": 0.0,
+      "confident_lead_count": 0,
+      "uncertain_lead_count": 0,
+      "calibration_status": "UNVERIFIED_PIXEL_DOMAIN",
+      "measurements_available": true,
+      "warnings": [
+        "Image calibration is unverified. While lead geometry is mapped, voltage amplitude and time measurements are strictly pixel-domain offsets and must NOT be interpreted as physical mV or mm/s."
+      ]
+    }
+  },
+  "performance_metrics": {
+    "hardware_environment": "Apple Silicon Mac (MPS/CPU)",
+    "sample_count": 5,
+    "first_explainability_request_sec": 3.172,
+    "subsequent_explainability_request_sec": 2.963,
+    "image_upload_latency_sec": 0.04,
+    "image_retrieval_latency_sec": 0.005
+  },
+  "total_ecg_records_tested": 9
+}

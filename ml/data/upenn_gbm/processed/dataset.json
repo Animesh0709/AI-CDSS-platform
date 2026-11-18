@@ -1,0 +1,313 @@
+{
+  "name": "UPenn-GBM-Standardized",
+  "description": "Standardized 4D multimodal brain MRI volumes (FLAIR, T1, T1ce, T2) matching MSD format",
+  "num_cases": 18,
+  "cases": [
+    {
+      "subject_id": "UPENN-GBM-00002_11",
+      "image": "ml/data/upenn_gbm/processed/images/UPENN-GBM-00002_11.nii.gz",
+      "label": "ml/data/upenn_gbm/processed/labels/UPENN-GBM-00002_11.nii.gz",
+      "shape": [
+        240,
+        240,
+        155,
+        4
+      ],
+      "labels_present": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "subject_id": "UPENN-GBM-00006_11",
+      "image": "ml/data/upenn_gbm/processed/images/UPENN-GBM-00006_11.nii.gz",
+      "label": "ml/data/upenn_gbm/processed/labels/UPENN-GBM-00006_11.nii.gz",
+      "shape": [
+        240,
+        240,
+        155,
+        4
+      ],
+      "labels_present": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "subject_id": "UPENN-GBM-00008_11",
+      "image": "ml/data/upenn_gbm/processed/images/UPENN-GBM-00008_11.nii.gz",
+      "label": "ml/data/upenn_gbm/processed/labels/UPENN-GBM-00008_11.nii.gz",
+      "shape": [
+        240,
+        240,
+        155,
+        4
+      ],
+      "labels_present": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "subject_id": "UPENN-GBM-00009_11",
+      "image": "ml/data/upenn_gbm/processed/images/UPENN-GBM-00009_11.nii.gz",
+      "label": "ml/data/upenn_gbm/processed/labels/UPENN-GBM-00009_11.nii.gz",
+      "shape": [
+        240,
+        240,
+        155,
+        4
+      ],
+      "labels_present": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "subject_id": "UPENN-GBM-00011_11",
+      "image": "ml/data/upenn_gbm/processed/images/UPENN-GBM-00011_11.nii.gz",
+      "label": "ml/data/upenn_gbm/processed/labels/UPENN-GBM-00011_11.nii.gz",
+      "shape": [
+        240,
+        240,
+        155,
+        4
+      ],
+      "labels_present": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "subject_id": "UPENN-GBM-00013_11",
+      "image": "ml/data/upenn_gbm/processed/images/UPENN-GBM-00013_11.nii.gz",
+      "label": "ml/data/upenn_gbm/processed/labels/UPENN-GBM-00013_11.nii.gz",
+      "shape": [
+        240,
+        240,
+        155,
+        4
+      ],
+      "labels_present": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "subject_id": "UPENN-GBM-00014_11",
+      "image": "ml/data/upenn_gbm/processed/images/UPENN-GBM-00014_11.nii.gz",
+      "label": "ml/data/upenn_gbm/processed/labels/UPENN-GBM-00014_11.nii.gz",
+      "shape": [
+        240,
+        240,
+        155,
+        4
+      ],
+      "labels_present": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "subject_id": "UPENN-GBM-00016_11",
+      "image": "ml/data/upenn_gbm/processed/images/UPENN-GBM-00016_11.nii.gz",
+      "label": "ml/data/upenn_gbm/processed/labels/UPENN-GBM-00016_11.nii.gz",
+      "shape": [
+        240,
+        240,
+        155,
+        4
+      ],
+      "labels_present": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "subject_id": "UPENN-GBM-00017_11",
+      "image": "ml/data/upenn_gbm/processed/images/UPENN-GBM-00017_11.nii.gz",
+      "label": "ml/data/upenn_gbm/processed/labels/UPENN-GBM-00017_11.nii.gz",
+      "shape": [
+        240,
+        240,
+        155,
+        4
+      ],
+      "labels_present": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "subject_id": "UPENN-GBM-00018_11",
+      "image": "ml/data/upenn_gbm/processed/images/UPENN-GBM-00018_11.nii.gz",
+      "label": "ml/data/upenn_gbm/processed/labels/UPENN-GBM-00018_11.nii.gz",
+      "shape": [
+        240,
+        240,
+        155,
+        4
+      ],
+      "labels_present": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "subject_id": "UPENN-GBM-00020_11",
+      "image": "ml/data/upenn_gbm/processed/images/UPENN-GBM-00020_11.nii.gz",
+      "label": "ml/data/upenn_gbm/processed/labels/UPENN-GBM-00020_11.nii.gz",
+      "shape": [
+        240,
+        240,
+        155,
+        4
+      ],
+      "labels_present": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "subject_id": "UPENN-GBM-00021_11",
+      "image": "ml/data/upenn_gbm/processed/images/UPENN-GBM-00021_11.nii.gz",
+      "label": "ml/data/upenn_gbm/processed/labels/UPENN-GBM-00021_11.nii.gz",
+      "shape": [
+        240,
+        240,
+        155,
+        4
+      ],
+      "labels_present": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "subject_id": "UPENN-GBM-00026_11",
+      "image": "ml/data/upenn_gbm/processed/images/UPENN-GBM-00026_11.nii.gz",
+      "label": "ml/data/upenn_gbm/processed/labels/UPENN-GBM-00026_11.nii.gz",
+      "shape": [
+        240,
+        240,
+        155,
+        4
+      ],
+      "labels_present": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "subject_id": "UPENN-GBM-00029_11",
+      "image": "ml/data/upenn_gbm/processed/images/UPENN-GBM-00029_11.nii.gz",
+      "label": "ml/data/upenn_gbm/processed/labels/UPENN-GBM-00029_11.nii.gz",
+      "shape": [
+        240,
+        240,
+        155,
+        4
+      ],
+      "labels_present": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "subject_id": "UPENN-GBM-00030_11",
+      "image": "ml/data/upenn_gbm/processed/images/UPENN-GBM-00030_11.nii.gz",
+      "label": "ml/data/upenn_gbm/processed/labels/UPENN-GBM-00030_11.nii.gz",
+      "shape": [
+        240,
+        240,
+        155,
+        4
+      ],
+      "labels_present": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "subject_id": "UPENN-GBM-00031_11",
+      "image": "ml/data/upenn_gbm/processed/images/UPENN-GBM-00031_11.nii.gz",
+      "label": "ml/data/upenn_gbm/processed/labels/UPENN-GBM-00031_11.nii.gz",
+      "shape": [
+        240,
+        240,
+        155,
+        4
+      ],
+      "labels_present": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "subject_id": "UPENN-GBM-00033_11",
+      "image": "ml/data/upenn_gbm/processed/images/UPENN-GBM-00033_11.nii.gz",
+      "label": "ml/data/upenn_gbm/processed/labels/UPENN-GBM-00033_11.nii.gz",
+      "shape": [
+        240,
+        240,
+        155,
+        4
+      ],
+      "labels_present": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "subject_id": "UPENN-GBM-00035_11",
+      "image": "ml/data/upenn_gbm/processed/images/UPENN-GBM-00035_11.nii.gz",
+      "label": "ml/data/upenn_gbm/processed/labels/UPENN-GBM-00035_11.nii.gz",
+      "shape": [
+        240,
+        240,
+        155,
+        4
+      ],
+      "labels_present": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ]
+}

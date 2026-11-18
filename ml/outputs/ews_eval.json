@@ -1,0 +1,50 @@
+{
+  "auc_roc": 1.0,
+  "n_train": 2400,
+  "n_test": 600,
+  "feature_count": 30,
+  "top_features": [
+    {
+      "name": "temperature_c_mean",
+      "importance": 0.3489
+    },
+    {
+      "name": "news2_score_last",
+      "importance": 0.1724
+    },
+    {
+      "name": "heart_rate_mean",
+      "importance": 0.1716
+    },
+    {
+      "name": "news2_score_mean",
+      "importance": 0.123
+    },
+    {
+      "name": "temperature_c_last",
+      "importance": 0.1162
+    },
+    {
+      "name": "spo2_mean",
+      "importance": 0.0579
+    },
+    {
+      "name": "respiratory_rate_last",
+      "importance": 0.0101
+    },
+    {
+      "name": "heart_rate_last",
+      "importance": 0.0001
+    },
+    {
+      "name": "heart_rate_std",
+      "importance": 0.0
+    },
+    {
+      "name": "heart_rate_slope",
+      "importance": 0.0
+    }
+  ],
+  "model_type": "XGBoostClassifier",
+  "note": "Synthetic NEWS2-labelled training data. Research prototype only."
+}

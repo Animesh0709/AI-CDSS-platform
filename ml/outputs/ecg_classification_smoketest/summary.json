@@ -1,0 +1,234 @@
+{
+  "status": "COMPLETED",
+  "phase": "7.1.1",
+  "artifact_type": "SMOKETEST",
+  "model_architecture": "MultiLabelECGClassifier (5 independent binary XGBoost / Prior models)",
+  "target_classes": [
+    "NORM",
+    "MI",
+    "STTC",
+    "CD",
+    "HYP"
+  ],
+  "random_seed": 42,
+  "min_weight_threshold": 0.0,
+  "manifest_counts": {
+    "train": {
+      "records": 17418,
+      "patients": 15023
+    },
+    "val": {
+      "records": 2183,
+      "patients": 1942
+    },
+    "test": {
+      "records": 2198,
+      "patients": 1904
+    }
+  },
+  "completeness_audit": {
+    "dataset_complete": false,
+    "total_missing_records": 21785,
+    "splits": {
+      "train": {
+        "expected": 17418,
+        "physical_found": 11,
+        "missing": 17407
+      },
+      "val": {
+        "expected": 2183,
+        "physical_found": 2,
+        "missing": 2181
+      },
+      "test": {
+        "expected": 2198,
+        "physical_found": 1,
+        "missing": 2197
+      }
+    }
+  },
+  "records_evaluated_in_run": {
+    "train": 11,
+    "val": 2,
+    "test": 1
+  },
+  "training_info": {
+    "NORM": {
+      "model_type": "ConstantPredictor",
+      "n_pos": 11,
+      "n_neg": 0,
+      "scale_pos_weight": 1.0
+    },
+    "MI": {
+      "model_type": "ConstantPredictor",
+      "n_pos": 0,
+      "n_neg": 11,
+      "scale_pos_weight": 1.0
+    },
+    "STTC": {
+      "model_type": "ConstantPredictor",
+      "n_pos": 0,
+      "n_neg": 11,
+      "scale_pos_weight": 1.0
+    },
+    "CD": {
+      "model_type": "ConstantPredictor",
+      "n_pos": 0,
+      "n_neg": 11,
+      "scale_pos_weight": 1.0
+    },
+    "HYP": {
+      "model_type": "ConstantPredictor",
+      "n_pos": 0,
+      "n_neg": 11,
+      "scale_pos_weight": 1.0
+    }
+  },
+  "selected_thresholds": {
+    "NORM": 0.1,
+    "MI": 0.1,
+    "STTC": 0.5,
+    "CD": 0.5,
+    "HYP": 0.5
+  },
+  "validation_metrics": {
+    "per_class": {
+      "NORM": {
+        "support": 1,
+        "total_samples": 2,
+        "prevalence": 0.5,
+        "threshold": 0.1,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1_score": 0.6667,
+        "auroc": 0.5,
+        "auprc": 0.5
+      },
+      "MI": {
+        "support": 1,
+        "total_samples": 2,
+        "prevalence": 0.5,
+        "threshold": 0.1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "auroc": 0.5,
+        "auprc": 0.5
+      },
+      "STTC": {
+        "support": 0,
+        "total_samples": 2,
+        "prevalence": 0.0,
+        "threshold": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "auroc": null,
+        "auprc": null
+      },
+      "CD": {
+        "support": 0,
+        "total_samples": 2,
+        "prevalence": 0.0,
+        "threshold": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "auroc": null,
+        "auprc": null
+      },
+      "HYP": {
+        "support": 0,
+        "total_samples": 2,
+        "prevalence": 0.0,
+        "threshold": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "auroc": null,
+        "auprc": null
+      }
+    },
+    "aggregate": {
+      "macro_f1": 0.1333,
+      "micro_f1": 0.5,
+      "macro_auroc": 0.5,
+      "macro_auprc": 0.5,
+      "hamming_loss": 0.2,
+      "subset_accuracy": 0.5
+    }
+  },
+  "test_metrics": {
+    "per_class": {
+      "NORM": {
+        "support": 1,
+        "total_samples": 1,
+        "prevalence": 1.0,
+        "threshold": 0.1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "auroc": null,
+        "auprc": null
+      },
+      "MI": {
+        "support": 0,
+        "total_samples": 1,
+        "prevalence": 0.0,
+        "threshold": 0.1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "auroc": null,
+        "auprc": null
+      },
+      "STTC": {
+        "support": 0,
+        "total_samples": 1,
+        "prevalence": 0.0,
+        "threshold": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "auroc": null,
+        "auprc": null
+      },
+      "CD": {
+        "support": 0,
+        "total_samples": 1,
+        "prevalence": 0.0,
+        "threshold": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "auroc": null,
+        "auprc": null
+      },
+      "HYP": {
+        "support": 0,
+        "total_samples": 1,
+        "prevalence": 0.0,
+        "threshold": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "auroc": null,
+        "auprc": null
+      }
+    },
+    "aggregate": {
+      "macro_f1": 0.2,
+      "micro_f1": 1.0,
+      "macro_auroc": null,
+      "macro_auprc": null,
+      "hamming_loss": 0.0,
+      "subset_accuracy": 1.0
+    }
+  },
+  "prevention_of_data_leakage": {
+    "normalization_fitted_strictly_on_train": true,
+    "thresholds_optimized_strictly_on_val": true,
+    "test_set_strictly_evaluation_only": true,
+    "patient_isolation_verified": true
+  }
+}

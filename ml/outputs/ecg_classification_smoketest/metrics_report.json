@@ -1,0 +1,136 @@
+{
+  "validation": {
+    "per_class": {
+      "NORM": {
+        "support": 1,
+        "total_samples": 2,
+        "prevalence": 0.5,
+        "threshold": 0.1,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1_score": 0.6667,
+        "auroc": 0.5,
+        "auprc": 0.5
+      },
+      "MI": {
+        "support": 1,
+        "total_samples": 2,
+        "prevalence": 0.5,
+        "threshold": 0.1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "auroc": 0.5,
+        "auprc": 0.5
+      },
+      "STTC": {
+        "support": 0,
+        "total_samples": 2,
+        "prevalence": 0.0,
+        "threshold": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "auroc": null,
+        "auprc": null
+      },
+      "CD": {
+        "support": 0,
+        "total_samples": 2,
+        "prevalence": 0.0,
+        "threshold": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "auroc": null,
+        "auprc": null
+      },
+      "HYP": {
+        "support": 0,
+        "total_samples": 2,
+        "prevalence": 0.0,
+        "threshold": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "auroc": null,
+        "auprc": null
+      }
+    },
+    "aggregate": {
+      "macro_f1": 0.1333,
+      "micro_f1": 0.5,
+      "macro_auroc": 0.5,
+      "macro_auprc": 0.5,
+      "hamming_loss": 0.2,
+      "subset_accuracy": 0.5
+    }
+  },
+  "test": {
+    "per_class": {
+      "NORM": {
+        "support": 1,
+        "total_samples": 1,
+        "prevalence": 1.0,
+        "threshold": 0.1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "auroc": null,
+        "auprc": null
+      },
+      "MI": {
+        "support": 0,
+        "total_samples": 1,
+        "prevalence": 0.0,
+        "threshold": 0.1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "auroc": null,
+        "auprc": null
+      },
+      "STTC": {
+        "support": 0,
+        "total_samples": 1,
+        "prevalence": 0.0,
+        "threshold": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "auroc": null,
+        "auprc": null
+      },
+      "CD": {
+        "support": 0,
+        "total_samples": 1,
+        "prevalence": 0.0,
+        "threshold": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "auroc": null,
+        "auprc": null
+      },
+      "HYP": {
+        "support": 0,
+        "total_samples": 1,
+        "prevalence": 0.0,
+        "threshold": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "auroc": null,
+        "auprc": null
+      }
+    },
+    "aggregate": {
+      "macro_f1": 0.2,
+      "micro_f1": 1.0,
+      "macro_auroc": null,
+      "macro_auprc": null,
+      "hamming_loss": 0.0,
+      "subset_accuracy": 1.0
+    }
+  }
+}
