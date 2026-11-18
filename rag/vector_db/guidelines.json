@@ -1,0 +1,335 @@
+{
+  "embedding_mode": "sentence-transformers/all-MiniLM-L6-v2",
+  "chunks": [
+    {
+      "source": "ADA 2026 Standards of Medical Care in Diabetes: Screening and Diagnosis",
+      "source_url": null,
+      "section": "Introduction",
+      "text": "This document outlines the 2026 guidelines from the American Diabetes Association (ADA) regarding the screening, diagnosis, and classification of diabetes mellitus and prediabetes."
+    },
+    {
+      "source": "ADA 2026 Standards of Medical Care in Diabetes: Screening and Diagnosis",
+      "source_url": null,
+      "section": "Criteria for Diagnosing Diabetes",
+      "text": "Diabetes is diagnosed based on any of the following criteria: 1. **Fasting Plasma Glucose (FPG):** \u2265 126 mg/dL (7.0 mmol/L). Fasting is defined as no caloric intake for at least 8 hours. 2. **2-hour Plasma Glucose (PG):** \u2265 200 mg/dL (11.1 mmol/L) during a 75-g oral glucose tolerance test (OGTT). 3. **A1C:** \u2265 6.5% (48 mmol/mol). The test should be performed in a laboratory using a method that is NGSP certified. 4. **Random Plasma Glucose:** \u2265 200 mg/dL (11.1 mmol/L) in a patient with classic symptoms of hyperglycemia or hyperglycemic crisis."
+    },
+    {
+      "source": "ADA 2026 Standards of Medical Care in Diabetes: Screening and Diagnosis",
+      "source_url": null,
+      "section": "Criteria for Diagnosing Diabetes",
+      "text": "Plasma Glucose:** \u2265 200 mg/dL (11.1 mmol/L) in a patient with classic symptoms of hyperglycemia or hyperglycemic crisis. *Note: In the absence of unequivocal hyperglycemia, criteria 1\u20133 require two abnormal test results from the same sample or in two separate test samples.*"
+    },
+    {
+      "source": "ADA 2026 Standards of Medical Care in Diabetes: Screening and Diagnosis",
+      "source_url": null,
+      "section": "Criteria for Diagnosing Prediabetes",
+      "text": "Prediabetes indicates an increased risk for diabetes and cardiovascular disease. Criteria include: - **Fasting Plasma Glucose (FPG):** 100 mg/dL (5.6 mmol/L) to 125 mg/dL (6.9 mmol/L) (Impaired Fasting Glucose, IFG). - **2-hour PG during 75-g OGTT:** 140 mg/dL (7.8 mmol/L) to 199 mg/dL (11.0 mmol/L) (Impaired Glucose Tolerance, IGT). - **A1C:** 5.7\u20136.4% (39\u201347 mmol/mol)."
+    },
+    {
+      "source": "ADA 2026 Standards of Medical Care in Diabetes: Screening and Diagnosis",
+      "source_url": null,
+      "section": "Screening for Type 2 Diabetes in Asymptomatic Adults",
+      "text": "Screening is recommended to detect prediabetes and type 2 diabetes in asymptomatic people. 1. Testing should be considered in adults of any age with overweight or obesity (BMI \u2265 25 kg/m\u00b2, or \u2265 23 kg/m\u00b2 in Asian Americans) who have one or more risk factors. 2. For all other patients, testing should begin at age 35 years. 3. If results are normal, testing should be repeated at a minimum of 3-year intervals, with consideration of more frequent testing depending on initial results and risk status. 4. People with prediabetes (A1C \u2265 5.7%, IGT, or IFG) should be tested yearly. 5. Women who were diagnosed with gestational diabetes mellitus should have lifelong testing at least every 3 years."
+    },
+    {
+      "source": "ADA 2026 Standards of Medical Care in Diabetes: Screening and Diagnosis",
+      "source_url": null,
+      "section": "Risk Factors for Type 2 Diabetes",
+      "text": "- First-degree relative with diabetes. - High-risk race/ethnicity (e.g., African American, Latino, Native American, Asian American, Pacific Islander). - History of CVD. - Hypertension (\u2265 130/80 mmHg or on therapy for hypertension). - HDL cholesterol level < 35 mg/dL and/or a triglyceride level > 250 mg/dL. - Polycystic ovary syndrome. - Physical inactivity. - Conditions associated with insulin resistance (e.g., severe obesity, acanthosis nigricans)."
+    },
+    {
+      "source": "ADA 2026 Standards of Medical Care in Diabetes: Screening and Diagnosis",
+      "source_url": null,
+      "section": "Screening for Type 1 Diabetes",
+      "text": "Screening for type 1 diabetes risk with a panel of islet autoantibodies is recommended in the setting of a research trial or can be offered as an option for first-degree family members of a proband with type 1 diabetes."
+    },
+    {
+      "source": "ADA 2026 Standards of Medical Care in Diabetes: Screening and Diagnosis",
+      "source_url": null,
+      "section": "Gestational Diabetes Mellitus (GDM)",
+      "text": "- Test for undiagnosed diabetes at the first prenatal visit in those with risk factors. - Test for GDM at 24\u201328 weeks of gestation in pregnant women not previously found to have diabetes. - Screen women with a history of GDM for prediabetes or diabetes at 4\u201312 weeks postpartum, using the 75-g OGTT."
+    },
+    {
+      "source": "ADA 2026 Standards of Medical Care in Diabetes: Screening and Diagnosis",
+      "source_url": null,
+      "section": "Cystic Fibrosis-Related Diabetes (CFRD)",
+      "text": "Annual screening for CFRD with an OGTT should begin by age 10 years in all patients with cystic fibrosis not previously diagnosed with CFRD. A1C is not recommended as a screening test for CFRD."
+    },
+    {
+      "source": "ADA 2026 Standards of Medical Care in Diabetes: Screening and Diagnosis",
+      "source_url": null,
+      "section": "Post-Transplantation Diabetes Mellitus (PTDM)",
+      "text": "Patients should be screened after organ transplantation for PTDM. An OGTT is the preferred test to make a diagnosis of PTDM. A1C can be used, but only after clinical stability has been achieved."
+    },
+    {
+      "source": "ADA 2026 Standards of Medical Care in Diabetes: Screening and Diagnosis",
+      "source_url": null,
+      "section": "Monogenic Diabetes Syndromes",
+      "text": "All children diagnosed with diabetes in the first 6 months of life should have immediate genetic testing for neonatal diabetes. Consider testing for monogenic diabetes (MODY) in children and adults diagnosed in early adulthood with strong family history but without typical features of type 1 or type 2 diabetes."
+    },
+    {
+      "source": "ADA 2026 Standards of Medical Care in Diabetes: Screening and Diagnosis",
+      "source_url": null,
+      "section": "Point-of-Care Testing",
+      "text": "Point-of-care A1C assays may be used for screening and diagnosis of diabetes in clinics that hold a CLIA waiver and use an FDA-approved device for diagnosis."
+    },
+    {
+      "source": "ADA 2026 Standards of Medical Care in Diabetes: Screening and Diagnosis",
+      "source_url": null,
+      "section": "Disclaimer",
+      "text": "These guidelines are summarized for clinical decision support and are not a substitute for clinical judgement. Always verify with full ADA documentation."
+    },
+    {
+      "source": "ADA 2026 Standards of Medical Care: Pharmacologic Approaches to Glycemic Treatment",
+      "source_url": null,
+      "section": "Introduction",
+      "text": "This document summarizes the American Diabetes Association (ADA) 2026 guidelines for the pharmacologic management of adults with type 2 diabetes."
+    },
+    {
+      "source": "ADA 2026 Standards of Medical Care: Pharmacologic Approaches to Glycemic Treatment",
+      "source_url": null,
+      "section": "Glycemic Targets",
+      "text": "- **A1C Goal:** A general target of < 7.0% (53 mmol/mol) for many nonpregnant adults is appropriate. - **More Stringent Goals (e.g., < 6.5%):** For patients with a short duration of diabetes, type 2 diabetes treated with lifestyle or metformin only, long life expectancy, or no significant CVD, provided it can be achieved without significant hypoglycemia. - **Less Stringent Goals (e.g., < 8.0%):** For patients with a history of severe hypoglycemia, limited life expectancy, advanced microvascular or macrovascular complications, extensive comorbid conditions, or long-standing diabetes in whom the general target is difficult to achieve."
+    },
+    {
+      "source": "ADA 2026 Standards of Medical Care: Pharmacologic Approaches to Glycemic Treatment",
+      "source_url": null,
+      "section": "First-Line Therapy",
+      "text": "- Metformin remains the preferred initial pharmacological agent for the treatment of type 2 diabetes. - Once initiated, metformin should be continued as long as it is tolerated and not contraindicated. - Other medications (glucagon-like peptide 1 (GLP-1) receptor agonists, sodium-glucose cotransporter 2 (SGLT2) inhibitors), with or without metformin, are considered appropriate initial therapy for individuals with type 2 diabetes with or at high risk for atherosclerotic cardiovascular disease (ASCVD), heart failure (HF), or chronic kidney disease (CKD)."
+    },
+    {
+      "source": "ADA 2026 Standards of Medical Care: Pharmacologic Approaches to Glycemic Treatment",
+      "source_url": null,
+      "section": "Cardiovascular Disease (ASCVD)",
+      "text": "For patients with established ASCVD or indicators of high ASCVD risk: - **GLP-1 Receptor Agonists:** Preferred agents include dulaglutide, liraglutide, and semaglutide (subcutaneous). - **SGLT2 Inhibitors:** Preferred agents include empagliflozin, canagliflozin, and dapagliflozin. - These agents should be considered independently of baseline A1C or individualized A1C target."
+    },
+    {
+      "source": "ADA 2026 Standards of Medical Care: Pharmacologic Approaches to Glycemic Treatment",
+      "source_url": null,
+      "section": "Heart Failure (HF)",
+      "text": "For patients with type 2 diabetes and established heart failure (particularly HFrEF): - **SGLT2 Inhibitors:** Empagliflozin, canagliflozin, and dapagliflozin have proven benefit in reducing heart failure hospitalizations and should be added to the regimen."
+    },
+    {
+      "source": "ADA 2026 Standards of Medical Care: Pharmacologic Approaches to Glycemic Treatment",
+      "source_url": null,
+      "section": "Chronic Kidney Disease (CKD)",
+      "text": "For patients with type 2 diabetes and CKD (e.g., eGFR < 60 mL/min/1.73 m\u00b2 or urinary albumin-to-creatinine ratio (UACR) \u2265 300 mg/g): - **SGLT2 Inhibitors:** Preferred to reduce CKD progression and cardiovascular events. - If an SGLT2 inhibitor is contraindicated or not tolerated, a **GLP-1 Receptor Agonist** with proven cardiovascular benefit is recommended."
+    },
+    {
+      "source": "ADA 2026 Standards of Medical Care: Pharmacologic Approaches to Glycemic Treatment",
+      "source_url": null,
+      "section": "Weight Management",
+      "text": "When choosing glucose-lowering medications, consider their effect on weight: - **Weight Loss Promoted:** GLP-1 receptor agonists (e.g., semaglutide, tirzepatide) and SGLT2 inhibitors. - **Weight Neutral:** Metformin, DPP-4 inhibitors. - **Weight Gain Associated:** Insulin, sulfonylureas, thiazolidinediones (TZDs)."
+    },
+    {
+      "source": "ADA 2026 Standards of Medical Care: Pharmacologic Approaches to Glycemic Treatment",
+      "source_url": null,
+      "section": "Insulin Therapy",
+      "text": "- The early introduction of insulin should be considered if there is evidence of ongoing catabolism (weight loss), if symptoms of hyperglycemia are present, or when A1C levels (> 10% [86 mmol/mol]) or blood glucose levels (\u2265 300 mg/dL [16.7 mmol/L]) are very high. - **Basal Insulin:** Typically the starting insulin regimen. Includes long-acting analogs (glargine, detemir, degludec) or intermediate-acting human NPH. - **Prandial Insulin:** If A1C remains above target despite adequately titrated basal insulin, consider adding prandial (mealtime) insulin. - When insulin is initiated, metformin should generally be continued for glycemic and metabolic benefits."
+    },
+    {
+      "source": "ADA 2026 Standards of Medical Care: Pharmacologic Approaches to Glycemic Treatment",
+      "source_url": null,
+      "section": "Insulin Therapy",
+      "text": "time) insulin. - When insulin is initiated, metformin should generally be continued for glycemic and metabolic benefits. - Sulfonylureas should typically be discontinued or dose-reduced when prandial insulin is initiated to avoid severe hypoglycemia."
+    },
+    {
+      "source": "ADA 2026 Standards of Medical Care: Pharmacologic Approaches to Glycemic Treatment",
+      "source_url": null,
+      "section": "Hypoglycemia Management",
+      "text": "- Individuals at risk for hypoglycemia should be asked about symptomatic and asymptomatic hypoglycemia at every encounter. - Glucose (15\u201320 g) is the preferred treatment for the conscious individual with blood glucose < 70 mg/dL (3.9 mmol/L). - Glucagon should be prescribed for all individuals at increased risk of level 2 or 3 hypoglycemia."
+    },
+    {
+      "source": "ADA 2026 Standards of Medical Care: Pharmacologic Approaches to Glycemic Treatment",
+      "source_url": null,
+      "section": "Disclaimer",
+      "text": "These guidelines are summarized for clinical decision support. Treatment must be individualized. Always verify with full ADA documentation."
+    },
+    {
+      "source": "AHA/ACC 2025 Guideline for the Prevention, Detection, Evaluation, and Management of High Blood Pressure",
+      "source_url": null,
+      "section": "Introduction",
+      "text": "The 2025 American Heart Association (AHA) and American College of Cardiology (ACC) guidelines provide a comprehensive framework for managing high blood pressure (hypertension) in adults to reduce cardiovascular risk."
+    },
+    {
+      "source": "AHA/ACC 2025 Guideline for the Prevention, Detection, Evaluation, and Management of High Blood Pressure",
+      "source_url": null,
+      "section": "Blood Pressure Classification",
+      "text": "Blood pressure (BP) should be categorized into four levels based on the average of two or more careful readings obtained on two or more occasions: 1. **Normal:** Systolic < 120 mmHg AND Diastolic < 80 mmHg. 2. **Elevated:** Systolic 120\u2013129 mmHg AND Diastolic < 80 mmHg. 3. **Stage 1 Hypertension:** Systolic 130\u2013139 mmHg OR Diastolic 80\u201389 mmHg. 4. **Stage 2 Hypertension:** Systolic \u2265 140 mmHg OR Diastolic \u2265 90 mmHg."
+    },
+    {
+      "source": "AHA/ACC 2025 Guideline for the Prevention, Detection, Evaluation, and Management of High Blood Pressure",
+      "source_url": null,
+      "section": "Measurement and Monitoring",
+      "text": "Accurate BP measurement is critical. - **In-office:** Use validated automated oscillometric devices. Patients should rest for 5 minutes before measurement. - **Out-of-office:** Out-of-office measurements, such as ambulatory blood pressure monitoring (ABPM) and home blood pressure monitoring (HBPM), are highly recommended to confirm the diagnosis of hypertension and titrate BP-lowering medication. - **White Coat Hypertension:** Consider in patients with elevated office BP but normal out-of-office BP. - **Masked Hypertension:** Consider in patients with normal office BP but elevated out-of-office BP."
+    },
+    {
+      "source": "AHA/ACC 2025 Guideline for the Prevention, Detection, Evaluation, and Management of High Blood Pressure",
+      "source_url": null,
+      "section": "Nonpharmacological Interventions",
+      "text": "Lifestyle modifications are the cornerstone of hypertension management: - **Weight loss:** Target BMI of 18.5\u201324.9 kg/m\u00b2. Expect ~1 mmHg reduction per 1 kg lost. - **DASH Diet:** Dietary Approaches to Stop Hypertension (rich in fruits, vegetables, whole grains, low in sodium). - **Sodium reduction:** Target < 1500 mg/day, but at least a 1000 mg/day reduction is beneficial. - **Potassium supplementation:** Aim for 3500\u20135000 mg/day, preferably by diet (unless contraindicated by CKD or drugs). - **Physical activity:** Aerobic (90\u2013150 min/week), dynamic resistance, and isometric resistance exercises. - **Alcohol intake:** Limit to \u2264 2 drinks daily for men and \u2264 1 drink daily for women."
+    },
+    {
+      "source": "AHA/ACC 2025 Guideline for the Prevention, Detection, Evaluation, and Management of High Blood Pressure",
+      "source_url": null,
+      "section": "Pharmacological Treatment Thresholds",
+      "text": "Initiation of BP-lowering medication depends on BP stage and cardiovascular risk (e.g., 10-year ASCVD risk). - **Elevated BP:** Nonpharmacological therapy. Reassess in 3\u20136 months. - **Stage 1 Hypertension (ASCVD risk < 10%):** Nonpharmacological therapy. Reassess in 3\u20136 months. - **Stage 1 Hypertension (ASCVD risk \u2265 10% or known CVD/DM/CKD):** Nonpharmacological therapy + BP-lowering medication (1 agent). Reassess in 1 month. - **Stage 2 Hypertension:** Nonpharmacological therapy + BP-lowering medication (often requires 2 agents from different classes). Reassess in 1 month."
+    },
+    {
+      "source": "AHA/ACC 2025 Guideline for the Prevention, Detection, Evaluation, and Management of High Blood Pressure",
+      "source_url": null,
+      "section": "Target Blood Pressure Goals",
+      "text": "- For adults with confirmed hypertension and known CVD or 10-year ASCVD event risk of 10% or higher, a BP target of < 130/80 mmHg is recommended. - For adults with confirmed hypertension without additional markers of increased CVD risk, a BP target of < 130/80 mmHg may be reasonable."
+    },
+    {
+      "source": "AHA/ACC 2025 Guideline for the Prevention, Detection, Evaluation, and Management of High Blood Pressure",
+      "source_url": null,
+      "section": "First-Line Antihypertensive Agents",
+      "text": "Four primary classes of medications are recommended for initial monotherapy: 1. **Thiazide or thiazide-like diuretics** (e.g., Chlorthalidone, Hydrochlorothiazide). Chlorthalidone is preferred due to prolonged half-life and proven trial reduction of CVD. 2. **Angiotensin-converting enzyme (ACE) inhibitors** (e.g., Lisinopril, Enalapril). 3. **Angiotensin receptor blockers (ARBs)** (e.g., Losartan, Valsartan). 4. **Calcium channel blockers (CCBs)** (e.g., Amlodipine - dihydropyridine). *Note: ACE inhibitors and ARBs should NOT be used simultaneously.*"
+    },
+    {
+      "source": "AHA/ACC 2025 Guideline for the Prevention, Detection, Evaluation, and Management of High Blood Pressure",
+      "source_url": null,
+      "section": "Special Populations",
+      "text": "- **Black adults with hypertension:** Initial therapy should include a thiazide-type diuretic or CCB. - **Chronic Kidney Disease (CKD):** Initial therapy should include an ACE inhibitor or ARB to slow kidney disease progression. - **Diabetes Mellitus:** Initiate treatment at BP \u2265 130/80 mmHg. All first-line classes are useful and effective. - **Heart Failure (HFrEF):** ACE inhibitors or ARBs, beta-blockers, and mineralocorticoid receptor antagonists (MRAs) are standard. Avoid non-dihydropyridine CCBs (verapamil, diltiazem). - **Pregnancy:** Methyldopa, nifedipine, and labetalol are preferred. ACE inhibitors, ARBs, and direct renin inhibitors are contraindicated."
+    },
+    {
+      "source": "AHA/ACC 2025 Guideline for the Prevention, Detection, Evaluation, and Management of High Blood Pressure",
+      "source_url": null,
+      "section": "Resistant Hypertension",
+      "text": "Defined as office BP \u2265 130/80 mmHg in a patient prescribed \u2265 3 antihypertensive medications at optimal doses, including a diuretic, or BP controlled on \u2265 4 medications. - Exclude pseudoresistance (e.g., poor technique, white coat effect, nonadherence). - Identify and reverse contributing factors (e.g., NSAIDs, stimulants, oral contraceptives, high sodium). - Screen for secondary causes (e.g., primary aldosteronism, CKD, obstructive sleep apnea, renal artery stenosis). - Pharmacological strategy: Maximize diuretic therapy, add a mineralocorticoid receptor antagonist (spironolactone), or add agents with different mechanisms of action."
+    },
+    {
+      "source": "AHA/ACC 2025 Guideline for the Prevention, Detection, Evaluation, and Management of High Blood Pressure",
+      "source_url": null,
+      "section": "Hypertensive Crises",
+      "text": "- **Hypertensive Emergencies:** Severe BP elevation (usually >180/120 mmHg) with new or worsening target organ damage (e.g., encephalopathy, MI, pulmonary edema). Requires immediate admission to an ICU and intravenous medications for controlled BP reduction. - **Hypertensive Urgencies:** Severe BP elevation without target organ damage. Manage by adjusting oral maintenance therapy; usually does not require hospital admission."
+    },
+    {
+      "source": "AHA/ACC 2025 Guideline for the Prevention, Detection, Evaluation, and Management of High Blood Pressure",
+      "source_url": null,
+      "section": "Disclaimer",
+      "text": "These guidelines are summarized for clinical decision support. Clinicians should use their judgment in individualizing treatment based on patient-specific factors."
+    },
+    {
+      "source": "AHA/ACC/HFSA 2022 Guideline for the Management of Heart Failure",
+      "source_url": null,
+      "section": "Introduction",
+      "text": "This document summarizes the 2022 guidelines from the American Heart Association (AHA), American College of Cardiology (ACC), and Heart Failure Society of America (HFSA) for the diagnosis and management of heart failure (HF)."
+    },
+    {
+      "source": "AHA/ACC/HFSA 2022 Guideline for the Management of Heart Failure",
+      "source_url": null,
+      "section": "Heart Failure Classification",
+      "text": "Heart failure is classified by Left Ventricular Ejection Fraction (LVEF): 1. **HFrEF (Heart Failure with Reduced Ejection Fraction):** LVEF \u2264 40%. 2. **HFmrEF (Heart Failure with Mildly Reduced Ejection Fraction):** LVEF 41% to 49%. 3. **HFpEF (Heart Failure with Preserved Ejection Fraction):** LVEF \u2265 50%. 4. **HFimpEF (Heart Failure with Improved Ejection Fraction):** Previous LVEF \u2264 40% and a follow-up measurement of LVEF > 40%."
+    },
+    {
+      "source": "AHA/ACC/HFSA 2022 Guideline for the Management of Heart Failure",
+      "source_url": null,
+      "section": "Stages of Heart Failure",
+      "text": "- **Stage A (At Risk for HF):** Patients at risk for HF but without current or prior symptoms or signs of HF and without structural, biomarker, or genetic markers of heart disease. - **Stage B (Pre-HF):** Patients without current or prior symptoms or signs of HF but evidence of structural heart disease, increased filling pressures, or elevated risk biomarkers. - **Stage C (Symptomatic HF):** Patients with current or prior symptoms and/or signs of HF caused by a structural and/or functional cardiac abnormality. - **Stage D (Advanced HF):** Severe symptoms and/or signs of HF at rest, recurrent hospitalizations despite guideline-directed medical therapy (GDMT)."
+    },
+    {
+      "source": "AHA/ACC/HFSA 2022 Guideline for the Management of Heart Failure",
+      "source_url": null,
+      "section": "Guideline-Directed Medical Therapy (GDMT) for HFrEF",
+      "text": "The core pharmacologic foundation for patients with HFrEF (Stage C) consists of 4 classes of medications: 1. **ARNI (Angiotensin Receptor-Neprilysin Inhibitor):** Sacubitril/valsartan is recommended to reduce morbidity and mortality. If ARNI is not feasible, an ACE inhibitor or ARB is recommended. 2. **Beta-Blockers:** Specifically bisoprolol, carvedilol, or sustained-release metoprolol succinate to reduce mortality and hospitalizations. 3. **MRA (Mineralocorticoid Receptor Antagonist):** Spironolactone or eplerenone are recommended in patients with NYHA class II-IV symptoms to reduce morbidity and mortality. (Monitor potassium and renal function closely). 4."
+    },
+    {
+      "source": "AHA/ACC/HFSA 2022 Guideline for the Management of Heart Failure",
+      "source_url": null,
+      "section": "Guideline-Directed Medical Therapy (GDMT) for HFrEF",
+      "text": "nts with NYHA class II-IV symptoms to reduce morbidity and mortality. (Monitor potassium and renal function closely). 4. **SGLT2 Inhibitors:** Dapagliflozin or empagliflozin are recommended for patients with symptomatic chronic HFrEF, regardless of the presence of diabetes, to reduce hospitalization for HF and cardiovascular mortality."
+    },
+    {
+      "source": "AHA/ACC/HFSA 2022 Guideline for the Management of Heart Failure",
+      "source_url": null,
+      "section": "Management of HFmrEF and HFpEF",
+      "text": "- **Diuretics:** Recommended for relief of symptoms due to volume overload. - **SGLT2 Inhibitors:** Recommended in HFmrEF and HFpEF to decrease HF hospitalizations and cardiovascular mortality. - **MRAs, ARBs, and ARNIs:** Can be considered in HFmrEF and selected patients with HFpEF (particularly those with LVEF on the lower end of the spectrum) to decrease hospitalizations."
+    },
+    {
+      "source": "AHA/ACC/HFSA 2022 Guideline for the Management of Heart Failure",
+      "source_url": null,
+      "section": "Diuretic Therapy",
+      "text": "- Loop diuretics (e.g., furosemide, torsemide, bumetanide) are recommended in patients with HF and fluid retention to relieve symptoms, improve exercise capacity, and reduce hospitalizations. - Dosage should be carefully titrated to achieve dry weight while avoiding over-diuresis, which can worsen renal function."
+    },
+    {
+      "source": "AHA/ACC/HFSA 2022 Guideline for the Management of Heart Failure",
+      "source_url": null,
+      "section": "Devices and Interventions",
+      "text": "- **ICD (Implantable Cardioverter-Defibrillator):** Recommended for primary prevention of sudden cardiac death in selected patients with nonischemic dilated cardiomyopathy or ischemic heart disease at least 40 days post-MI with LVEF \u2264 35% and NYHA class II or III symptoms on chronic GDMT. - **CRT (Cardiac Resynchronization Therapy):** Indicated for patients with LVEF \u2264 35%, sinus rhythm, LBBB with a QRS duration of \u2265 150 ms, and NYHA class II, III, or ambulatory IV symptoms on GDMT."
+    },
+    {
+      "source": "AHA/ACC/HFSA 2022 Guideline for the Management of Heart Failure",
+      "source_url": null,
+      "section": "Hospitalization and Discharge Transitions",
+      "text": "- Patients hospitalized for HF should be carefully evaluated for precipitating factors and optimization of GDMT prior to discharge. - Early follow-up, ideally within 7 to 14 days of discharge, is critical to assess volume status, adjust GDMT, and prevent 30-day readmissions. - Multidisciplinary HF disease management programs are recommended for patients at high risk for hospital readmission."
+    },
+    {
+      "source": "AHA/ACC/HFSA 2022 Guideline for the Management of Heart Failure",
+      "source_url": null,
+      "section": "Disclaimer",
+      "text": "These guidelines are summarized for clinical decision support. Always consult full AHA/ACC documentation and individualize treatment plans based on patient comorbidities."
+    },
+    {
+      "source": "Hospital Readmission Risk Factors and Prevention Strategies (AHRQ Framework)",
+      "source_url": null,
+      "section": "Introduction",
+      "text": "This document synthesizes findings from the Agency for Healthcare Research and Quality (AHRQ) regarding 30-day hospital readmissions, identifying core risk factors and evidence-based interventions to prevent avoidable readmissions."
+    },
+    {
+      "source": "Hospital Readmission Risk Factors and Prevention Strategies (AHRQ Framework)",
+      "source_url": null,
+      "section": "Definition of 30-Day Readmission",
+      "text": "A 30-day readmission is defined as an admission to an acute care hospital within 30 days of a discharge from the same or another acute care hospital. Medicare and other payors penalize hospitals for high rates of readmissions for specific conditions, notably Heart Failure (HF), Acute Myocardial Infarction (AMI), and Pneumonia."
+    },
+    {
+      "source": "Hospital Readmission Risk Factors and Prevention Strategies (AHRQ Framework)",
+      "source_url": null,
+      "section": "Clinical Risk Factors",
+      "text": "Clinical complexity strongly correlates with readmission risk: 1. **High Comorbidity Burden:** Patients with multiple chronic conditions (e.g., diabetes, COPD, heart failure, chronic kidney disease) face compounded risks. 2. **Prior Hospitalizations:** A history of multiple admissions in the past 6 to 12 months is one of the strongest predictors of future readmissions. 3. **Polypharmacy:** Patients taking 5 or more daily medications, particularly high-risk drugs like insulin, anticoagulants, and sedatives, are at increased risk due to adverse drug events or nonadherence. 4."
+    },
+    {
+      "source": "Hospital Readmission Risk Factors and Prevention Strategies (AHRQ Framework)",
+      "source_url": null,
+      "section": "Clinical Risk Factors",
+      "text": " drugs like insulin, anticoagulants, and sedatives, are at increased risk due to adverse drug events or nonadherence. 4. **Length of Stay:** Prolonged index hospital stays often indicate severe illness or nosocomial complications, elevating readmission risk. 5. **Premature Discharge:** Discharging patients before clinical stability (e.g., unresolved fluid overload in heart failure) significantly guarantees readmission."
+    },
+    {
+      "source": "Hospital Readmission Risk Factors and Prevention Strategies (AHRQ Framework)",
+      "source_url": null,
+      "section": "Social Determinants of Health (SDOH)",
+      "text": "SDOH significantly impact a patient's ability to recover safely at home: - **Lack of Social Support:** Living alone without a caregiver limits a patient's ability to manage complex regimens, prepare meals, or attend follow-up appointments. - **Housing Instability:** Homelessness or inadequate housing prevents safe recovery and medication storage. - **Transportation Barriers:** Inability to access follow-up care or pharmacies. - **Health Literacy:** Limited understanding of discharge instructions, warning signs, or medication schedules. - **Financial Toxicity:** Inability to afford prescribed medications or healthy food."
+    },
+    {
+      "source": "Hospital Readmission Risk Factors and Prevention Strategies (AHRQ Framework)",
+      "source_url": null,
+      "section": "Vulnerable Populations",
+      "text": "- **Elderly (Frail) Patients:** Increased risk for falls, delirium, and infections. - **Cognitive Impairment:** Patients with dementia or delirium struggle to follow post-discharge instructions. - **Behavioral Health Issues:** Untreated depression, anxiety, or substance use disorders severely disrupt recovery and adherence."
+    },
+    {
+      "source": "Hospital Readmission Risk Factors and Prevention Strategies (AHRQ Framework)",
+      "source_url": null,
+      "section": "Evidence-Based Interventions for Prevention",
+      "text": "- Discharge planning should begin on the day of admission. - Use the \"Teach-Back\" method to confirm patient understanding of their diagnosis, medications, and warning signs. - Provide clear, written instructions translated to the patient's primary language at an appropriate reading level. - A pharmacist or clinician must conduct a rigorous medication reconciliation at admission, transfer, and discharge. - Identify and resolve discrepancies, duplications, and harmful interactions. - Ensure the patient has physical access to their new medications before leaving the hospital. - High-risk patients should be seen by a primary care provider or specialist within **7 days** of discharge."
+    },
+    {
+      "source": "Hospital Readmission Risk Factors and Prevention Strategies (AHRQ Framework)",
+      "source_url": null,
+      "section": "Evidence-Based Interventions for Prevention",
+      "text": "e hospital. - High-risk patients should be seen by a primary care provider or specialist within **7 days** of discharge. - If an in-person visit is not feasible, a telehealth visit or structured phone call by a nurse within 48 to 72 hours is recommended to assess symptoms and medication adherence. - Utilize multidisciplinary teams (social workers, pharmacists, case managers, community health workers) to bridge the gap between hospital and home. - Arrange for home health services, durable medical equipment (DME), and social services prior to discharge."
+    },
+    {
+      "source": "Hospital Readmission Risk Factors and Prevention Strategies (AHRQ Framework)",
+      "source_url": null,
+      "section": "Evidence-Based Interventions for Prevention",
+      "text": "l and home. - Arrange for home health services, durable medical equipment (DME), and social services prior to discharge. - Educate patients and caregivers on specific \"red flag\" symptoms that require immediate attention (e.g., sudden weight gain in heart failure, signs of hypoglycemia in diabetes). - Provide a direct contact number (e.g., 24/7 nurse triage line) as an alternative to returning to the Emergency Department."
+    },
+    {
+      "source": "Hospital Readmission Risk Factors and Prevention Strategies (AHRQ Framework)",
+      "source_url": null,
+      "section": "Disclaimer",
+      "text": "These risk factors and interventions are summarized for clinical decision support. Institutions should implement customized transition programs based on their local population needs and resources."
+    }
+  ]
+}

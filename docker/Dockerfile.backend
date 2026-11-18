@@ -1,0 +1,40 @@
+# ═══════════════════════════════════════════════════════════════
+# Dockerfile — AI-CDSS Backend (FastAPI + PyTorch)
+# Build: docker build -f docker/Dockerfile.backend -t ai-cdss-backend .
+# ═══════════════════════════════════════════════════════════════
+FROM python:3.11-slim
+
+# System deps (tesseract, poppler for OCR; libgomp for XGBoost)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    tesseract-ocr \
+    poppler-utils \
+    libgomp1 \
+    libglib2.0-0 \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+# Install Python dependencies first (layer caching)
+COPY backend/requirements.txt ./requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy application code
+COPY backend/ ./backend/
+COPY ml/models/ ./ml/models/
+COPY ml/ecg_classification/ ./ml/ecg_classification/
+COPY ml/scripts/ ./ml/scripts/
+COPY rag/ ./rag/
+
+# MRI data is large — mount as a Docker volume in production
+# COPY ml/data/ ./ml/data/   ← do NOT bake into image
+
+# Ensure uploads directory exists
+RUN mkdir -p ./backend/uploads
+
+# Add backend + repo root to PYTHONPATH so 'ml.*' imports resolve
+ENV PYTHONPATH="/app/backend:/app"
+
+WORKDIR /app/backend
+EXPOSE 8000
+
+CMD ["python", "run_backend.py"]

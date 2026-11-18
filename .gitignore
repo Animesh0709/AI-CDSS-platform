@@ -1,0 +1,100 @@
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Virtual Environments ─────────────────────────────────────────────────────
+.venv/
+.venv-mac/
+.venv-win/
+venv/
+env/
+ENV/
+
+# ── Environment & Secrets ────────────────────────────────────────────────────
+.env
+!.env.example
+
+# ── Databases ────────────────────────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ── ML Model Weights (use Git LFS or S3 instead) ─────────────────────────────
+# Comment these out if you want to commit small model files
+# ml/models/*.pt
+# ml/models/*.pkl
+# ml/models/*.joblib
+
+# ── Large Archives & Binaries (>100MB GitHub limit) ─────────────────────────
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.safetensors
+tools/*.exe
+
+# ── Raw Offline Training Datasets (not needed for deployment) ────────────────
+ml/data/physionet_2019/
+ml/data/ecg/
+ml/data/brain_tumor/
+ml/data/msd_task01/
+ml/data/msd_raw/
+ml/data/upenn_gbm/raw/
+ml/data/**/.download_cache/
+ml/data/**/UPLOAD_*
+ml/outputs/**/audit*/
+ml/outputs/**/*.npy
+
+# Keep 2 primary sample MRI cases for demonstration, ignore the remaining 160MB
+ml/data/upenn_gbm/processed/images/UPENN-GBM-0000[6-9]*
+ml/data/upenn_gbm/processed/images/UPENN-GBM-0001*
+ml/data/upenn_gbm/processed/images/UPENN-GBM-0002*
+ml/data/upenn_gbm/processed/images/UPENN-GBM-0003[1-5]*
+ml/data/upenn_gbm/processed/labels/UPENN-GBM-0000[6-9]*
+ml/data/upenn_gbm/processed/labels/UPENN-GBM-0001*
+ml/data/upenn_gbm/processed/labels/UPENN-GBM-0002*
+ml/data/upenn_gbm/processed/labels/UPENN-GBM-0003[1-5]*
+
+# ── Caches & Temporary Files ─────────────────────────────────────────────────
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+*.DS_Store
+.mpl-cache/
+backend/.mpl-cache/
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+*.out
+
+# ── Uploads (runtime-generated, not source code) ─────────────────────────────
+uploads/
+
+# ── Frontend build output ─────────────────────────────────────────────────────
+frontend/dist/
+frontend/node_modules/
+
+# ── Scratch / Dev files ──────────────────────────────────────────────────────
+scratch/
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Code review graph (tool-generated) ───────────────────────────────────────
+.code-review-graph/

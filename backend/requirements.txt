@@ -1,0 +1,70 @@
+# AI-CDSS Backend Requirements
+# Generated from .venv-mac — Python 3.11
+# Install with: pip install -r requirements.txt
+
+# ── Web Framework ─────────────────────────────────────────────────────────────
+fastapi==0.162.0
+uvicorn[standard]==0.54.0
+uvloop==0.23.0
+python-multipart==0.0.32
+starlette==1.10.0
+
+# ── Database ──────────────────────────────────────────────────────────────────
+SQLAlchemy==2.1.6
+psycopg2-binary==2.9.13
+
+# ── Auth & Security ───────────────────────────────────────────────────────────
+python-jose==3.5.0
+passlib==1.7.4
+bcrypt==5.0.0
+cryptography==50.0.2
+
+# ── Settings ──────────────────────────────────────────────────────────────────
+pydantic==2.14.1
+pydantic-settings==2.16.1
+python-dotenv==1.2.4
+
+# ── ML / AI Core ──────────────────────────────────────────────────────────────
+torch==2.14.1
+torchvision==0.29.1
+numpy==2.4.6
+scikit-learn==1.9.1
+xgboost==3.2.0
+scipy==1.17.1
+joblib==1.6.0
+shap==0.51.0
+
+# ── Medical Imaging ───────────────────────────────────────────────────────────
+monai==1.6.1
+nibabel==5.4.2
+MedPy==0.5.2
+SimpleITK==2.5.6
+scikit-image==0.26.0
+pillow==13.0.0
+matplotlib==3.11.2
+
+# ── NLP / RAG ─────────────────────────────────────────────────────────────────
+sentence-transformers==6.2.0
+transformers==5.21.0
+faiss-cpu==1.15.1
+huggingface_hub==2.3.0
+tokenizers==0.23.0
+
+# ── OCR ───────────────────────────────────────────────────────────────────────
+pytesseract==0.3.13
+pdf2image==1.17.0
+
+# ── ECG ───────────────────────────────────────────────────────────────────────
+wfdb==4.3.1
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+pandas==3.1.0
+httpx==0.28.1
+requests==2.34.2
+tqdm==4.70.1
+lime==0.2.0.1
+email-validator==2.3.0
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+pytest==9.2.0
+anyio==4.15.1

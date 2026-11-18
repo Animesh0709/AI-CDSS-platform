@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #f7faf8;
+    color: #1e293b;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+@layer components {
+  /* Medical Card Utility */
+  .med-card {
+    @apply bg-white border border-[#e3ebe6] rounded-xl shadow-sm transition-all duration-200;
+  }
+
+  .med-card-hover {
+    @apply hover:shadow-md hover:border-[#bbf7d0];
+  }
+
+  /* Medical Button Primary */
+  .btn-med-primary {
+    @apply inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-[#0e7c5b] hover:bg-[#0b6348] active:bg-[#084a36] rounded-lg shadow-sm transition-colors focus:outline-none focus:ring-2 focus:ring-[#10b981] focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  /* Medical Button Secondary */
+  .btn-med-secondary {
+    @apply inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-[#0f4c3a] bg-[#ecfdf5] hover:bg-[#d1fae5] border border-[#a7f3d0] rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-[#10b981] focus:ring-offset-2;
+  }
+
+  /* Medical Form Input */
+  .input-med {
+    @apply w-full px-3.5 py-2 text-sm bg-white border border-[#cbd5e1] rounded-lg text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#0e7c5b] focus:ring-2 focus:ring-[#0e7c5b]/20 transition-all;
+  }
+}
+
+/* Pulse indicator for live doctor active sessions */
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
